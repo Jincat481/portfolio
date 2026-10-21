@@ -29,7 +29,8 @@
     const images = imageCount ? `<div class="feature-media${comparison ? " comparison" : ""}" style="--count:${imageCount}">${Feature.images.map(image => Media(image)).join("")}</div>` : "";
     const summary = Feature.diagram ? `<div class="diagram-summary">${Feature.diagram.map(item => `<div><h4>${Escape(item.heading)}</h4><p>${Escape(item.body)}</p></div>`).join("")}</div>` : "";
     const notes = Feature.rows.length ? `<div class="feature-notes">${Feature.rows.map(item => `<div><h4>${Escape(item.heading)}</h4><p>${Escape(item.body)}</p></div>`).join("")}</div>` : "";
-    const flow = Feature.flow ? `<figure class="flow-block"><div><span>처리 흐름</span><button type="button" data-lightbox="${Feature.flow}" data-caption="${Escape(Feature.title)} · 처리 흐름">확대해서 보기 ↗</button></div><div class="flow-scroll"><img src="${Feature.flow}" alt="${Escape(Feature.title)} 처리 흐름도" loading="lazy"></div></figure>` : "";
+    const flowSource = Feature.flow ? `${Feature.flow}?v=20261021-branches` : null;
+    const flow = flowSource ? `<figure class="flow-block"><div><span>처리 흐름</span><button type="button" data-lightbox="${flowSource}" data-caption="${Escape(Feature.title)} · 처리 흐름">확대해서 보기 ↗</button></div><div class="flow-scroll"><img src="${flowSource}" alt="${Escape(Feature.title)} 처리 흐름도" loading="lazy"></div></figure>` : "";
     return `<section class="detail-section" id="${Feature.anchor}"><p class="feature-topline">IMPLEMENTATION · ${String(Index + 1).padStart(2, "0")}</p><h3>${Escape(Feature.title)}</h3>${images}${summary}${notes}${flow}${VideoLinks(Feature.links)}</section>`;
   }
 
