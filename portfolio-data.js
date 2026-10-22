@@ -666,26 +666,26 @@ window.portfolioData = {
           ],
           "images": [
             {
-              "src": "assets/ppt/ardy-reference-console.webp",
+              "src": "assets/ppt/ardy-reference-console.webp?v=console2",
               "width": 800,
               "height": 800,
               "aspect": 1,
               "label": "생성 모션 · 원본 확인",
               "alt": "생성 모션 · 원본 확인",
-              "video": "assets/ppt/ardy-reference-console.mp4"
+              "video": "assets/ppt/ardy-reference-console.mp4?v=console2"
             },
             {
-              "src": "assets/ppt/ardy-manny-console.webp",
+              "src": "assets/ppt/ardy-manny-console.webp?v=console2",
               "width": 800,
               "height": 800,
               "aspect": 1,
               "label": "언리얼 캐릭터 · 재생",
               "alt": "언리얼 캐릭터 · 재생",
-              "video": "assets/ppt/ardy-manny-console.mp4"
+              "video": "assets/ppt/ardy-manny-console.mp4?v=console2"
             }
           ],
           "links": [
-            "assets/ppt/ardy-reference-manny-comparison.mp4"
+            "assets/ppt/ardy-reference-manny-comparison.mp4?v=console2"
           ],
           "flow": {
             "src": "assets/ppt/slide297-flow.webp",
@@ -861,7 +861,7 @@ window.portfolioData = {
   ],
   "source": {
     "file": "전진오_포트폴리오_좌설명_우자료_레이아웃.pptx",
-    "sha256": "19b0248dd08c69e03f5cef085d883920172e817ebf1593c959d77aff34b7bb9e",
+    "sha256": "2bcdf49243fee5500764e9198b9d5f6795be0dbd82c44f7f1e171fe410f2fea2",
     "slideCount": 21
   }
 };
