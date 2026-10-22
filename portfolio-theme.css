@@ -75,6 +75,7 @@ html .media-count-3 .media-annotation{margin-top:12px;font-size:16px;line-height
 html [data-slide-id="275"] .slide-media{grid-template-columns:minmax(0,1fr);gap:24px}
 
 html .portfolio-page>h3{padding-bottom:18px;border-bottom:1px solid var(--accent)}
+html .category-content>.portfolio-page:first-child>h3{display:none}
 html .slide-note{border-top:0;border-left:3px solid var(--accent);padding:0 0 0 18px;margin:0 0 32px}
 html .scope-row .slide-note{padding:0 0 0 18px;margin:0}
 html .scope-row .slide-links{padding-left:18px}
