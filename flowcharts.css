@@ -1,0 +1,43 @@
+.web-flow{width:100%;min-width:0;margin:26px 0 0;padding:18px 0 0;border-top:1px solid #000;background:#fff;color:#000}
+.web-flow-main{margin:0;padding:0;border:0}
+.web-flow-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:0 0 18px;font:800 17px/1.6 var(--sans);color:var(--accent)}
+.web-flow-heading button{font:600 16px/1.6 var(--sans);min-height:36px;padding:4px 0;border:0;background:#fff;color:var(--accent);text-decoration:underline;text-underline-offset:4px}
+.flow-chart{position:relative;width:100%;min-width:0;padding:4px 0;background:#fff;isolation:isolate}
+.flow-nodes{position:relative;z-index:2;display:grid;grid-template-columns:repeat(var(--flow-columns,4),minmax(0,1fr));gap:52px 28px;list-style:none;padding:0;margin:0}
+.flow-node{display:flex;min-width:0;min-height:108px;list-style:none;align-self:stretch}
+.flow-node-surface{position:relative;display:flex;align-items:center;justify-content:center;width:100%;min-width:0;min-height:100%;padding:14px 12px;border:1.5px solid var(--accent);border-radius:6px;background:#fff;text-align:center;font:600 18px/1.6 var(--sans);word-break:keep-all;overflow-wrap:anywhere;color:#000}
+.flow-node-surface>span{position:relative;z-index:1}
+.flow-node-decision{min-height:118px}
+.flow-node-decision .flow-node-surface{padding:22px 30px;border:0;border-radius:0;background:transparent}
+.flow-diamond{position:absolute;inset:0;display:block;width:100%;height:100%;pointer-events:none}
+.flow-diamond polygon{fill:#fff;stroke:var(--accent);stroke-width:1.5;vector-effect:non-scaling-stroke}
+.flow-connectors{position:absolute;z-index:1;inset:0;display:block;width:100%;height:100%;overflow:visible;pointer-events:none;color:var(--accent)}
+.flow-connectors marker path{fill:var(--accent)}
+.flow-edge{stroke:var(--accent);stroke-width:1.5;fill:none;stroke-linejoin:round;stroke-linecap:round}
+.flow-edge-label rect{fill:#fff}
+.flow-edge-label text{fill:var(--accent);font:800 16px/1 var(--sans)}
+.flow-accessible{position:absolute;clip-path:inset(50%);width:1px;height:1px;overflow:hidden;white-space:nowrap;padding:0;margin:0;list-style:none}
+.flow-chart[data-flow-kind="pool"] .flow-nodes{row-gap:44px}
+.flow-chart[data-flow-kind="pool"] .flow-node:nth-child(1),.flow-chart[data-flow-kind="pool"] .flow-node:nth-child(2),.flow-chart[data-flow-kind="pool"] .flow-node:nth-child(5){width:min(340px,100%);justify-self:center}
+.flow-chart[data-flow-kind="pool"] .flow-node{min-height:92px}
+.flow-chart[data-flow-kind="pool"] .flow-node-decision{min-height:118px}
+.flow-chart[data-flow-kind="ladder"][data-flow-mode="wide"] .flow-nodes{row-gap:48px}
+.flow-chart[data-flow-kind="ladder"][data-flow-mode="wide"] .flow-node:nth-child(5){min-height:76px}
+.flow-chart[data-flow-kind="ladder"] .flow-node-surface{font-size:18px}
+.flow-chart[data-flow-mode="narrow"] .flow-node{min-height:88px}
+.flow-chart[data-flow-mode="narrow"] .flow-node-decision{min-height:118px}
+.flow-chart[data-flow-mode="narrow"][data-flow-kind="ladder"] .flow-node-surface,.flow-chart[data-flow-mode="narrow"][data-flow-kind="pool"] .flow-node-surface{font-size:16px;padding-left:10px;padding-right:10px}
+.flow-chart[data-flow-mode="narrow"] .flow-node-decision .flow-node-surface{padding-left:28px;padding-right:28px}
+.flow-dialog{width:min(1200px,calc(100% - 40px));max-width:none;max-height:calc(100% - 40px);padding:28px;background:#fff;color:#000;border:1px solid var(--accent);overflow:auto}
+.flow-dialog::backdrop{background:#0008;backdrop-filter:none}
+.flow-dialog-header{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:28px}
+.flow-dialog-header h2{font:800 24px/1.5 var(--sans);color:var(--accent)}
+.flow-dialog .web-flow{padding:0;margin:0;border:0}
+.flow-dialog .web-flow-heading{display:none}
+.flow-dialog .flow-chart[data-flow-kind] .flow-node-surface{font-size:20px}
+.flow-dialog .flow-chart[data-flow-mode="wide"] .flow-node{min-height:120px}
+@media(max-width:760px){.web-flow{margin-top:24px}.flow-dialog{width:calc(100% - 24px);max-height:calc(100% - 24px);padding:18px}.flow-dialog-header{margin-bottom:22px}.flow-dialog .flow-node-surface{font-size:18px}.flow-nodes{column-gap:28px}}
+@media print{.web-flow-heading button{display:none}.flow-node{break-inside:avoid}.web-flow{break-inside:avoid}}
+:root{scroll-padding-top:84px}
+html .portfolio-page,html .portfolio-category{scroll-margin-top:0}
+@media(max-width:760px){:root{scroll-padding-top:76px}.flow-dialog .flow-chart[data-flow-kind] .flow-node-surface{font-size:18px}.flow-dialog .flow-chart[data-flow-kind="ladder"] .flow-node-surface,.flow-dialog .flow-chart[data-flow-kind="pool"] .flow-node-surface{font-size:16px}}

@@ -1,0 +1,107 @@
+/* Selected D theme: white, black, purple. Photographs and videos retain their colors. */
+@font-face{font-family:NanumSquareNeo;src:url('assets/fonts/NanumSquareNeo-Variable.woff2') format('woff2');font-style:normal;font-weight:300 900;font-display:swap}
+:root{--accent:#6941b5;--body-font:NanumSquareNeo,"Malgun Gothic",sans-serif;--heading-font:var(--body-font);--body-weight:600;--heading-weight:800;--body-size:20px;--body-leading:1.85;--page-title-size:34px}
+:root{--paper:#fff;--white:#fff;--ink:#000;--muted:#000;--rule:#000;--tag:#fff;--sans:var(--body-font);--mono:var(--body-font);color-scheme:light;scroll-behavior:auto}
+html body{background:#fff;color:#000;font-family:var(--body-font);font-size:var(--body-size);font-weight:var(--body-weight);line-height:var(--body-leading);font-synthesis:none}
+:root h1,:root h2,:root h3,:root h4{font-family:var(--heading-font);font-weight:var(--heading-weight);letter-spacing:-.035em}
+html .page-shell,html .site-footer{max-width:1240px;padding-left:48px;padding-right:48px}
+html .site-header{background:#fff;border-color:#000}
+html .site-header nav a{font-size:15px;font-weight:var(--body-weight);color:#000}
+html .wordmark{font-size:20px;font-weight:var(--heading-weight)}
+html .hero{grid-template-columns:minmax(0,1fr) 220px;gap:64px}
+html h1{font-size:80px;line-height:1.15;color:#000;margin-bottom:32px}
+html .intro-lead{font-size:24px;line-height:1.8;font-weight:var(--heading-weight);letter-spacing:-.025em}
+html .intro-detail{font-size:var(--body-size);line-height:var(--body-leading);color:#000;max-width:740px;margin-top:24px}
+html .intro-emphasis{font-weight:var(--heading-weight);color:var(--accent)}
+html .hero-links{font-size:17px;font-weight:var(--heading-weight);gap:30px;margin-top:32px}
+html .hero-links a,html .category-nav a{color:var(--accent)}
+html .text-link{border-color:var(--accent)}
+html .portrait{padding-top:10px}
+html .portrait img{width:220px;height:283px;border:0}
+html .portrait figcaption{font-size:14px;color:#000;letter-spacing:0;font-weight:var(--body-weight)}
+html .section-caption{font-size:18px;font-weight:var(--heading-weight);color:#000;margin-top:54px}
+html .stack-group h3{font-size:24px;font-weight:var(--heading-weight);color:#000;margin-bottom:22px}
+html .stack-group .stack-icons span{font-size:16px;font-weight:var(--body-weight)}
+html .stack-icons img{filter:none}
+html .section-title,html #projects>.section-title{font-size:28px;font-weight:var(--heading-weight);color:var(--accent)}
+html .section-title small,html #projects>.section-title small{font-size:18px;font-weight:var(--body-weight);color:#000}
+html #projects .category-nav a{font-size:18px;font-weight:var(--heading-weight)}
+html #projects .fold-controls,html #projects .fold-controls button{font-size:16px;color:#000;font-weight:var(--body-weight)}
+html .fold-controls button:disabled{opacity:1;text-decoration:line-through}
+html .category-number{font-size:18px;color:var(--accent);font-weight:var(--heading-weight)}
+html .category-label h2{font-size:36px;color:var(--accent)}
+html .category-label>span{font-size:19px;color:#000}
+html .category-toggle{font-size:16px;color:var(--accent);font-weight:var(--heading-weight)}
+html .portfolio-page{padding:46px 0}
+html .portfolio-page h3{font-size:var(--page-title-size);line-height:1.55;color:var(--accent);margin-bottom:32px}
+html .slide-layout{grid-template-columns:minmax(310px,.95fr) minmax(0,1.8fr);gap:42px}
+html .slide-note{padding:20px 0 26px}
+html .slide-note h4{font-size:21px;line-height:1.55;font-weight:var(--heading-weight);color:var(--accent);margin-bottom:14px}
+html .slide-note p,html .scope-grid .slide-note p{font-size:var(--body-size);line-height:var(--body-leading);font-weight:var(--body-weight);color:#000;overflow-wrap:break-word}
+html .slide-links{font-size:17px;line-height:1.8;font-weight:var(--heading-weight);color:var(--accent);margin-top:24px}
+html .media-label{font-size:21px;font-weight:var(--heading-weight);line-height:1.6;color:var(--accent)}
+html .slide-measurement{font-size:var(--body-size);line-height:var(--body-leading);color:#000;font-weight:var(--body-weight)}
+html .flow-heading,html .flow-heading button{font-size:15px;color:#000;font-weight:var(--body-weight)}
+html .scope-row{grid-template-columns:minmax(0,1.4fr) minmax(200px,.8fr);gap:42px;padding:30px 0}
+html .scope-image{max-width:340px}
+html .contact-list a{font-size:17px;color:#000}
+html .contact-list a>span:last-child{color:var(--accent)}
+html .site-footer{font-size:14px;color:#000}
+html .lightbox p{font-size:17px;color:#000}
+html .result-note h4{font-size:23px}
+html .result-copy{line-height:1.9}
+html .result-emphasis{display:inline-block;font-family:var(--heading-font);font-size:25px;font-weight:var(--heading-weight);line-height:1.65;color:#000;letter-spacing:-.04em;margin-top:8px}
+html .result-value{color:var(--accent);font-size:1.12em;font-weight:var(--heading-weight);white-space:nowrap}
+html .slide-measurement .result-emphasis{font-size:30px}
+/* Three images form one full-width rectangular group. */
+html .page-achievement{margin:-8px 0 32px;padding:0 0 24px;border-bottom:1px solid #000}
+html .achievement-title{font-size:26px;line-height:1.65;font-weight:800;color:#000;word-break:keep-all;letter-spacing:-.035em}
+html .achievement-title strong{color:var(--accent);font-weight:800}
+html .achievement-description{margin-top:10px;font-size:18px;line-height:1.85;font-weight:600;color:#000;word-break:keep-all}
+@media(max-width:760px){html .achievement-title{font-size:23px}html .achievement-description{font-size:17px}}
+html .slide-media.media-count-3{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px 14px}
+html .slide-media.media-count-3>figure:last-child{grid-column:auto;width:100%;justify-self:stretch}
+html .media-count-3 .media-label{min-height:1.6em;display:flex;align-items:flex-end;margin-bottom:12px;font-size:19px}
+html .media-count-3 .zoom-media{aspect-ratio:var(--gallery-ratio);overflow:hidden}
+html .media-count-3 .zoom-media img{width:100%;height:100%;object-fit:cover;object-position:center}
+html .media-count-3 .has-media-annotation .zoom-media img{height:auto;object-fit:initial}
+html .media-count-3 .media-annotation{margin-top:12px;font-size:16px;line-height:1.7;color:#000;font-weight:600;white-space:pre-line;word-break:keep-all}
+
+html .portfolio-page>h3{border-left:5px solid var(--accent);padding-left:18px}
+html .slide-note{border-top:0;border-left:3px solid var(--accent);padding:0 0 0 18px;margin:0 0 32px}
+html .scope-row .slide-note{padding:0 0 0 18px;margin:0}
+html .scope-row .slide-links{padding-left:18px}
+@media(max-width:900px){
+html .page-shell,html .site-footer{padding-left:28px;padding-right:28px}
+html .hero{grid-template-columns:minmax(0,1fr) 180px;gap:32px}
+html .portrait img{width:180px;height:231px}
+html .intro-lead{font-size:22px}
+html .slide-layout{grid-template-columns:minmax(260px,.95fr) minmax(0,1.5fr);gap:30px}
+}
+@media(max-width:760px){
+html .page-shell,html .site-footer{padding-left:24px;padding-right:24px}
+html .page-shell>section:first-child{padding-top:42px}
+html h1{font-size:64px}
+html .hero{grid-template-columns:1fr}
+html .portrait{grid-row:1;padding:0}
+html .portrait img{width:138px;height:177px}
+html .portrait figcaption{font-size:13px}
+html .intro-lead{font-size:22px}
+html .intro-detail,html .slide-note p{font-size:18px}
+html .slide-layout{grid-template-columns:1fr}
+html .slide-visual{grid-row:auto}
+html .slide-description{display:block}
+html .category-label h2{font-size:30px}
+html .category-label>span{font-size:17px}
+html .portfolio-page h3{font-size:26px}
+html .scope-row{grid-template-columns:1fr;gap:24px}
+html .scope-image{max-width:100%;justify-self:stretch}
+html .stack-groups{grid-template-columns:1fr;gap:36px}
+html .section-title{align-items:start;flex-direction:column}
+html .media-label{font-size:18px}
+html .contact-list a{font-size:15px;flex-wrap:wrap}
+html .slide-media.media-count-3{grid-template-columns:minmax(0,1fr);gap:24px}
+html .slide-media.media-count-3>figure:last-child{grid-column:auto}
+html .media-count-3 .media-label{min-height:0}
+html .media-count-3 .media-annotation{font-size:16px}
+}

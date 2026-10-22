@@ -25,6 +25,7 @@ jobs:
         run: |
           mkdir _site
           cp index.html style.css app.js portfolio-data.js .nojekyll _site/
+          cp portfolio-theme.css typography.js flowcharts.css flowcharts.js _site/
           cp -R assets _site/assets
           if [ -d samples ]; then cp -R samples _site/samples; fi
       - name: Upload Pages artifact
