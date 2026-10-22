@@ -771,10 +771,6 @@ window.portfolioData = {
             {
               "heading": "반복 설정 자동화",
               "body": "애니메이션 소스 임포트와 IK 자산 생성 자동화\n대상 메시 선택 후 UE4·Manny 재생"
-            },
-            {
-              "heading": "문제",
-              "body": "AI 생성 모션을 그대로 전달할 때\nUnreal 캐릭터와 본 기준 불일치"
             }
           ],
           "images": [
@@ -817,6 +813,10 @@ window.portfolioData = {
           "slideId": 298,
           "title": "리타깃 과정의 본 회전 오류 보정",
           "rows": [
+            {
+              "heading": "문제",
+              "body": "AI 생성 모션을 그대로 전달할 때\nUnreal 캐릭터와 본 기준 불일치"
+            },
             {
               "heading": "팔다리가 꼬인 원인",
               "body": "축과 기준 포즈가 다른 회전을\n본 이름 기준으로 바로 전달"
