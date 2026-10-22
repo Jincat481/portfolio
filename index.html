@@ -11,7 +11,7 @@
   <meta name="color-scheme" content="light">
   <title>전진오 — 게임 클라이언트 개발 포트폴리오</title>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-  <link rel="stylesheet" href="style.css?v=20261022-open-portfolio">
+  <link rel="stylesheet" href="style.css?v=20261022-grouped-stack">
   <script defer src="portfolio-data.js?v=20261022-ppt20"></script>
   <script defer src="app.js?v=20261022-open-portfolio"></script>
 </head>
@@ -37,16 +37,24 @@
         <figure class="portrait"><img id="portrait" width="270" height="347" src="assets/s1-19.webp" alt="전진오 프로필 사진" fetchpriority="high"><figcaption>전진오 · Jinoh Jeon</figcaption></figure>
       </div>
       <div class="section-caption"><span>Core Stack</span><span>개발에 사용한 도구</span></div>
-      <ul class="stack-icons" aria-label="사용 기술">
-        <li><img src="assets/stack/unrealengine.svg" width="40" height="40" alt=""><span>Unreal Engine</span><small>Engine</small></li>
-        <li><img src="assets/stack/unity.svg" width="40" height="40" alt=""><span>Unity</span><small>Engine</small></li>
-        <li><img src="assets/stack/cplusplus.svg" width="40" height="40" alt=""><span>C++</span><small>Language</small></li>
-        <li><img src="assets/stack/csharp.svg" width="40" height="40" alt=""><span>C#</span><small>Language</small></li>
-        <li><img src="assets/stack/python.svg" width="40" height="40" alt=""><span>Python</span><small>Language</small></li>
-        <li><img src="assets/stack/git.svg" width="40" height="40" alt=""><span>Git</span><small>Version control</small></li>
-        <li><img src="assets/stack/notion.svg" width="40" height="40" alt=""><span>Notion</span><small>Workspace</small></li>
-        <li><img src="assets/stack/mysql.svg" width="40" height="40" alt=""><span>MySQL</span><small>Database</small></li>
-      </ul>
+      <div class="stack-groups" aria-label="사용 기술">
+        <section class="stack-group" aria-labelledby="stack-engine"><h3 id="stack-engine">Engine</h3><ul class="stack-icons">
+          <li><img src="assets/stack/unrealengine.svg" width="40" height="40" alt=""><span>Unreal Engine</span></li>
+          <li><img src="assets/stack/unity.svg" width="40" height="40" alt=""><span>Unity</span></li>
+        </ul></section>
+        <section class="stack-group" aria-labelledby="stack-languages"><h3 id="stack-languages">Languages</h3><ul class="stack-icons">
+          <li><img src="assets/stack/cplusplus.svg" width="40" height="40" alt=""><span>C++</span></li>
+          <li><img src="assets/stack/csharp.svg" width="40" height="40" alt=""><span>C#</span></li>
+          <li><img src="assets/stack/python.svg" width="40" height="40" alt=""><span>Python</span></li>
+        </ul></section>
+        <section class="stack-group" aria-labelledby="stack-collaboration"><h3 id="stack-collaboration">Collaboration</h3><ul class="stack-icons">
+          <li><img src="assets/stack/git.svg" width="40" height="40" alt=""><span>Git</span></li>
+          <li><img src="assets/stack/notion.svg" width="40" height="40" alt=""><span>Notion</span></li>
+        </ul></section>
+        <section class="stack-group" aria-labelledby="stack-database"><h3 id="stack-database">Database</h3><ul class="stack-icons">
+          <li><img src="assets/stack/mysql.svg" width="40" height="40" alt=""><span>MySQL</span></li>
+        </ul></section>
+      </div>
     </section>
     <section id="projects" aria-labelledby="projects-title">
       <h2 class="section-title" id="projects-title"><span>Projects</span><small>프로젝트와 구현 기록</small></h2>
