@@ -43,7 +43,9 @@ window.portfolioData = {
             "https://youtu.be/dlEksnzpNKM"
           ],
           "flow": null,
-          "extra": []
+          "extra": [
+            "G-STAR 2026 전시 (예정)"
+          ]
         },
         {
           "page": 3,
@@ -901,7 +903,9 @@ window.portfolioData = {
           ],
           "links": [],
           "flow": null,
-          "extra": []
+          "extra": [
+            "G-STAR 2024 전시"
+          ]
         },
         {
           "page": 19,
