@@ -74,7 +74,7 @@
       const forward = To.cx > From.cx;
       const startX = forward ? From.right + 1 : From.left - 1;
       const endX = forward ? To.left - 5 : To.right + 5;
-      return {path:`M ${startX} ${From.cy} L ${endX} ${To.cy}`,labelX:(startX+endX)/2,labelY:From.cy-13};
+      return {path:`M ${startX} ${From.cy} L ${endX} ${To.cy}`,labelX:(startX+endX)/2,labelY:From.cy-20};
     }
     const startX = From.cx;
     const endX = To.cx;
@@ -82,7 +82,7 @@
     const endY = To.top - 5;
     const middleY = (startY + endY) / 2;
     if (Math.abs(startX-endX) < 2) return {path:`M ${startX} ${startY} L ${endX} ${endY}`,labelX:startX+16,labelY:middleY,vertical:true};
-    return {path:`M ${startX} ${startY} L ${startX} ${middleY} L ${endX} ${middleY} L ${endX} ${endY}`,labelX:(startX+endX)/2,labelY:middleY-12};
+    return {path:`M ${startX} ${startY} L ${startX} ${middleY} L ${endX} ${middleY} L ${endX} ${endY}`,labelX:(startX+endX)/2,labelY:middleY-20};
   }
 
   function Draw(Chart) {
@@ -106,9 +106,8 @@
       const label = Edge[2];
       let text = '';
       if (label) {
-        const width = label.length * 16 + 12;
-        const x = connector.vertical ? connector.labelX+width/2 : connector.labelX;
-        text = `<g class="flow-edge-label"><rect x="${x-width/2}" y="${connector.labelY-12}" width="${width}" height="24" rx="3"/><text x="${x}" y="${connector.labelY}" dominant-baseline="central" text-anchor="middle">${Escape(label)}</text></g>`;
+        const anchor = connector.vertical ? 'start' : 'middle';
+        text = `<g class="flow-edge-label"><text x="${connector.labelX}" y="${connector.labelY}" dominant-baseline="central" text-anchor="${anchor}">${Escape(label)}</text></g>`;
       }
       return `<path class="flow-edge" d="${connector.path}" marker-end="url(#${marker})"/>${text}`;
     }).join('');
