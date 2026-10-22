@@ -418,9 +418,9 @@ window.portfolioData = {
             "https://youtu.be/7o07m2XqvJQ"
           ],
           "flow": {
-            "src": "assets/ppt/slide267-flow.webp",
+            "src": "assets/ppt/slide267-flow-v2.webp",
             "width": 1443,
-            "height": 196,
+            "height": 180,
             "alt": "구간 끝 계산 사이클 길이로 제한 → 현재보다 뒤인가? → 사이클 시작 + 구간 끝 이동 종료점 반환 → 경계까지 몽타주 재생 정지 포즈 유지 → 예 → 아니요 · 해당 구간 제외",
             "large": false
           },
@@ -441,7 +441,7 @@ window.portfolioData = {
             },
             {
               "heading": "자동화 툴에 따른 시간 단축",
-              "body": "사다리 1개 · 수동 5분 → 툴 1분 가정\n약 80% 단축"
+              "body": "사다리 1개 배치\n수동 10분 내외 → 툴 2분 내외\n약 80% 단축"
             }
           ],
           "images": [
