@@ -20,7 +20,7 @@
   function Page(Item, Category) {
     const id = `${Category.id}-page-${Item.page}`;
     const notes = Item.rows.map(Note).join('');
-    if (Item.scope) return `<section class="portfolio-page scope-page" id="${id}" data-slide-id="${Item.slideId}"><h3>${Escape(Item.title)}</h3><div class="scope-grid">${notes}</div></section>`;
+    if (Item.scope) return `<section class="portfolio-page scope-page" id="${id}" data-slide-id="${Item.slideId}"><h3>${Escape(Item.title)}</h3><div class="scope-rows">${Item.rows.map(row => `<div class="scope-row"><div>${Note(row)}${Links(row.links || [])}</div>${row.image ? `<div class="scope-image">${Media(row.image)}</div>` : ''}</div>`).join('')}</div></section>`;
     const gallery = Item.images.length ? `<div class="slide-media media-count-${Item.images.length}">${Item.images.map(Media).join('')}</div>` : '';
     const mainFlow = Item.flow?.large ? Flow(Item.flow) : '';
     const bottomFlow = Item.flow && !Item.flow.large ? Flow(Item.flow) : '';

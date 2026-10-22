@@ -29,13 +29,14 @@ window.portfolioData = {
           ],
           "images": [
             {
-              "src": "assets/ppt/slide258-image8.webp",
+              "src": "assets/ppt/slide258-image8.webp?v=94004fb70e",
               "width": 1431,
               "height": 816,
               "aspect": 1.753425,
               "label": "",
               "alt": "월하일검",
-              "video": "assets/ppt/slide258-video8.mp4"
+              "sourceShapeId": 8,
+              "video": "assets/ppt/slide258-video8.mp4?v=94004fb70e"
             }
           ],
           "links": [
@@ -51,19 +52,87 @@ window.portfolioData = {
           "rows": [
             {
               "heading": "전투",
-              "body": "처형, 무기 트레이스·피격 판정, 넉백\n패링·가드·스턴 상태 연결\n전투 효과와 발소리"
+              "body": "처형, 무기 트레이스·피격 판정, 넉백\n패링·가드·스턴 상태 연결\n전투 효과와 발소리",
+              "image": {
+                "src": "assets/ppt/slide259-image16.webp?v=94004fb70e",
+                "width": 392,
+                "height": 305,
+                "aspect": 1.283423,
+                "label": "",
+                "alt": "전투 구현 화면",
+                "sourceShapeId": 16
+              },
+              "links": [
+                "https://youtu.be/3V3XkjqNfy8"
+              ]
             },
             {
               "heading": "파쿠르와 카메라 액션",
-              "body": "파쿠르·사다리·락온\n카메라 추적과 충돌\n오브젝트 가림·플레이어 근접 페이드"
+              "body": "파쿠르·사다리·락온\n카메라 추적과 충돌\n오브젝트 가림·플레이어 근접 페이드",
+              "image": {
+                "src": "assets/ppt/slide259-image19.webp?v=94004fb70e",
+                "width": 386,
+                "height": 305,
+                "aspect": 1.265252,
+                "label": "",
+                "alt": "파쿠르와 카메라 액션 구현 화면",
+                "sourceShapeId": 19
+              },
+              "links": [
+                "https://youtu.be/7o07m2XqvJQ"
+              ]
             },
             {
               "heading": "능력과 플레이어 액션",
-              "body": "발각도·은신, 포션·대시·웅크리기\n상호작용 대상 선택과 안내 UI·입력\n무기 납도·발도"
+              "body": "발각도·은신, 포션·대시·웅크리기\n상호작용 대상 선택과 안내 UI·입력\n무기 납도·발도",
+              "image": {
+                "src": "assets/ppt/slide259-image22.webp?v=94004fb70e",
+                "width": 534,
+                "height": 305,
+                "aspect": 1.753425,
+                "label": "",
+                "alt": "능력과 플레이어 액션 구현 화면",
+                "sourceShapeId": 22
+              },
+              "links": [
+                "https://youtu.be/dlEksnzpNKM"
+              ]
             }
           ],
-          "images": [],
-          "links": [],
+          "images": [
+            {
+              "src": "assets/ppt/slide259-image16.webp?v=94004fb70e",
+              "width": 392,
+              "height": 305,
+              "aspect": 1.283423,
+              "label": "",
+              "alt": "월하일검 · 담당 구현 범위",
+              "sourceShapeId": 16
+            },
+            {
+              "src": "assets/ppt/slide259-image19.webp?v=94004fb70e",
+              "width": 386,
+              "height": 305,
+              "aspect": 1.265252,
+              "label": "",
+              "alt": "월하일검 · 담당 구현 범위",
+              "sourceShapeId": 19
+            },
+            {
+              "src": "assets/ppt/slide259-image22.webp?v=94004fb70e",
+              "width": 534,
+              "height": 305,
+              "aspect": 1.753425,
+              "label": "",
+              "alt": "월하일검 · 담당 구현 범위",
+              "sourceShapeId": 22
+            }
+          ],
+          "links": [
+            "https://youtu.be/3V3XkjqNfy8",
+            "https://youtu.be/7o07m2XqvJQ",
+            "https://youtu.be/dlEksnzpNKM"
+          ],
           "flow": null,
           "extra": [],
           "scope": true
@@ -88,31 +157,34 @@ window.portfolioData = {
           ],
           "images": [
             {
-              "src": "assets/ppt/slide264-image17.webp",
+              "src": "assets/ppt/slide264-image17.webp?v=94004fb70e",
               "width": 695,
               "height": 542,
               "aspect": 1.282565,
               "label": "배치·재생",
               "alt": "배치·재생",
-              "video": "assets/ppt/slide264-video17.mp4"
+              "sourceShapeId": 17,
+              "video": "assets/ppt/slide264-video17.mp4?v=94004fb70e"
             },
             {
-              "src": "assets/ppt/slide264-image20.webp",
+              "src": "assets/ppt/slide264-image20.webp?v=94004fb70e",
               "width": 695,
               "height": 542,
               "aspect": 1.282565,
               "label": "시퀀스",
               "alt": "시퀀스",
-              "video": "assets/ppt/slide264-video20.mp4"
+              "sourceShapeId": 20,
+              "video": "assets/ppt/slide264-video20.mp4?v=94004fb70e"
             }
           ],
           "links": [
             "https://youtu.be/3V3XkjqNfy8"
           ],
           "flow": {
-            "src": "assets/ppt/slide264-flow.webp",
+            "src": "assets/ppt/slide264-flow.webp?v=94004fb70e",
             "width": 1429,
             "height": 111,
+            "aspect": 12.909014,
             "alt": "거리·방향·상태 장애물 검사 → 시퀀스 선택 캐릭터 연결 → 처형 배치 시퀀스 재생 → 종료 후 상태 이동, 카메라 잠금 복원",
             "large": false
           },
@@ -138,35 +210,39 @@ window.portfolioData = {
           ],
           "images": [
             {
-              "src": "assets/ppt/slide265-image17.webp",
+              "src": "assets/ppt/slide265-image17.webp?v=94004fb70e",
               "width": 695,
               "height": 375,
               "aspect": 1.856148,
               "label": "기본 배치",
-              "alt": "기본 배치"
+              "alt": "기본 배치",
+              "sourceShapeId": 17
             },
             {
-              "src": "assets/ppt/slide265-image20.webp",
+              "src": "assets/ppt/slide265-image20.webp?v=94004fb70e",
               "width": 695,
               "height": 375,
               "aspect": 1.856148,
               "label": "회전 배치",
-              "alt": "회전 배치"
+              "alt": "회전 배치",
+              "sourceShapeId": 20
             },
             {
-              "src": "assets/ppt/slide265-image23.webp",
+              "src": "assets/ppt/slide265-image23.webp?v=94004fb70e",
               "width": 695,
               "height": 375,
               "aspect": 1.856148,
               "label": "주변 재배치",
-              "alt": "주변 재배치"
+              "alt": "주변 재배치",
+              "sourceShapeId": 23
             }
           ],
           "links": [],
           "flow": {
-            "src": "assets/ppt/slide265-flow.webp",
+            "src": "assets/ppt/slide265-flow.webp?v=94004fb70e",
             "width": 1429,
             "height": 111,
+            "aspect": 12.909014,
             "alt": "기본 후보 확인 → 막히면 다른 각도 후보 검사 → 주변 안전 후보 재배치 → 모두 실패 시 플레이어 기준 유지",
             "large": false
           },
@@ -192,37 +268,41 @@ window.portfolioData = {
           ],
           "images": [
             {
-              "src": "assets/ppt/slide267-image17.webp",
-              "width": 477,
-              "height": 377,
+              "src": "assets/ppt/slide267-image17.webp?v=94004fb70e",
+              "width": 448,
+              "height": 355,
               "aspect": 1.262963,
               "label": "진입",
-              "alt": "진입"
+              "alt": "진입",
+              "sourceShapeId": 17
             },
             {
-              "src": "assets/ppt/slide267-image20.webp",
-              "width": 477,
-              "height": 377,
+              "src": "assets/ppt/slide267-image20.webp?v=94004fb70e",
+              "width": 448,
+              "height": 355,
               "aspect": 1.262963,
               "label": "반복 이동",
-              "alt": "반복 이동"
+              "alt": "반복 이동",
+              "sourceShapeId": 20
             },
             {
-              "src": "assets/ppt/slide267-image23.webp",
-              "width": 477,
-              "height": 377,
+              "src": "assets/ppt/slide267-image23.webp?v=94004fb70e",
+              "width": 449,
+              "height": 355,
               "aspect": 1.262963,
               "label": "상단 이동",
-              "alt": "상단 이동"
+              "alt": "상단 이동",
+              "sourceShapeId": 23
             }
           ],
           "links": [
             "https://youtu.be/7o07m2XqvJQ"
           ],
           "flow": {
-            "src": "assets/ppt/slide267-flow-v2.webp",
+            "src": "assets/ppt/slide267-flow.webp?v=94004fb70e",
             "width": 1443,
             "height": 180,
+            "aspect": 8.020817,
             "alt": "구간 끝 계산 사이클 길이로 제한 → 현재보다 뒤인가? → 사이클 시작 + 구간 끝 이동 종료점 반환 → 경계까지 몽타주 재생 정지 포즈 유지 → 예 → 아니요 · 해당 구간 제외",
             "large": false
           },
@@ -248,19 +328,18 @@ window.portfolioData = {
           ],
           "images": [
             {
-              "src": "assets/ppt/slide301-ik-problem.webp",
-              "width": 954,
-              "height": 564,
-              "aspect": 1.6921052508968923,
-              "label": "과거 적용 시험 · 이동 중 손발 고정",
-              "alt": "과거 사다리 IK 시험에서 손발 고정으로 자세가 변형된 화면"
+              "src": "assets/ppt/slide301-ik-problem.webp?v=94004fb70e",
+              "width": 1429,
+              "height": 845,
+              "aspect": 1.692105,
+              "label": "이동 중 손발 고정",
+              "alt": "이동 중 손발 고정",
+              "sourceShapeId": 4
             }
           ],
           "links": [],
           "flow": null,
-          "extra": [
-            "당시 애니메이션·IK 설정에서 재현한 화면 · 2026.07\n현재 사다리는 손 IK를 기본 비활성으로 운용"
-          ]
+          "extra": []
         },
         {
           "page": 8,
@@ -282,29 +361,32 @@ window.portfolioData = {
           ],
           "images": [
             {
-              "src": "assets/ppt/slide299-image4.webp",
+              "src": "assets/ppt/slide299-image4.webp?v=94004fb70e",
               "width": 695,
               "height": 521,
               "aspect": 1.333333,
               "label": "배치 설정 · Preview",
-              "alt": "배치 설정 · Preview"
+              "alt": "배치 설정 · Preview",
+              "sourceShapeId": 4
             },
             {
-              "src": "assets/ppt/slide299-image16.webp",
+              "src": "assets/ppt/slide299-image16.webp?v=94004fb70e",
               "width": 695,
               "height": 521,
               "aspect": 1.333333,
               "label": "자동 조립 · Apply",
-              "alt": "자동 조립 · Apply"
+              "alt": "자동 조립 · Apply",
+              "sourceShapeId": 16
             }
           ],
           "links": [
             "https://youtu.be/ImEcaClffQU"
           ],
           "flow": {
-            "src": "assets/ppt/slide299-flow.webp",
+            "src": "assets/ppt/slide299-flow.webp?v=94004fb70e",
             "width": 1429,
             "height": 111,
+            "aspect": 12.909037,
             "alt": "사다리 메시 선택 → 상·하단 바닥 높이 탐색 → 25cm 구간 자동 조립 → 진입점·콜리전 일괄 적용",
             "large": false
           },
@@ -330,29 +412,32 @@ window.portfolioData = {
           ],
           "images": [
             {
-              "src": "assets/ppt/slide292-image17.webp",
+              "src": "assets/ppt/slide292-image17.webp?v=94004fb70e",
               "width": 695,
               "height": 694,
               "aspect": 1.0,
               "label": "적용 전",
-              "alt": "적용 전"
+              "alt": "적용 전",
+              "sourceShapeId": 17
             },
             {
-              "src": "assets/ppt/slide292-image20.webp",
+              "src": "assets/ppt/slide292-image20.webp?v=94004fb70e",
               "width": 695,
               "height": 694,
               "aspect": 1.0,
               "label": "적용 후",
-              "alt": "적용 후"
+              "alt": "적용 후",
+              "sourceShapeId": 20
             }
           ],
           "links": [
             "https://youtu.be/vuIYejyGsJw"
           ],
           "flow": {
-            "src": "assets/ppt/slide292-flow.webp",
+            "src": "assets/ppt/slide292-flow.webp?v=94004fb70e",
             "width": 1429,
             "height": 111,
+            "aspect": 12.909014,
             "alt": "카메라와 캐릭터 거리 확인 → 시작·완전 숨김 거리로 값 계산 → FadeAmount 0~1 메시마다 전달 → 0: 원래 머티리얼 1: 완전 숨김",
             "large": false
           },
@@ -378,28 +463,34 @@ window.portfolioData = {
           ],
           "images": [
             {
-              "src": "assets/ppt/slide293-image8.webp",
+              "src": "assets/ppt/slide293-image22.webp?v=94004fb70e",
               "width": 623,
               "height": 467,
               "aspect": 1.333333,
               "label": "Masked + 디더",
-              "alt": "Masked + 디더"
+              "alt": "Masked + 디더",
+              "sourceShapeId": 22
             },
             {
-              "src": "assets/ppt/slide293-image11.webp",
+              "src": "assets/ppt/slide293-image24.webp?v=94004fb70e",
               "width": 623,
-              "height": 467,
-              "aspect": 1.333333,
+              "height": 558,
+              "aspect": 1.116329,
               "label": "Translucent",
-              "alt": "Translucent"
+              "alt": "Translucent · 머리카드 겹침\n정렬 문제",
+              "annotations": [
+                "머리카드 겹침\n정렬 문제"
+              ],
+              "sourceShapeId": 24
             },
             {
-              "src": "assets/ppt/slide293-image14.webp",
+              "src": "assets/ppt/slide293-image26.webp?v=94004fb70e",
               "width": 623,
               "height": 467,
               "aspect": 1.333333,
               "label": "숨김",
-              "alt": "숨김"
+              "alt": "숨김",
+              "sourceShapeId": 26
             }
           ],
           "links": [],
@@ -426,35 +517,39 @@ window.portfolioData = {
           ],
           "images": [
             {
-              "src": "assets/ppt/slide294-image17.webp",
+              "src": "assets/ppt/slide294-image17.webp?v=94004fb70e",
               "width": 455,
               "height": 455,
               "aspect": 1.0,
               "label": "FadeAmount 0",
-              "alt": "FadeAmount 0"
+              "alt": "FadeAmount 0",
+              "sourceShapeId": 17
             },
             {
-              "src": "assets/ppt/slide294-image20.webp",
+              "src": "assets/ppt/slide294-image20.webp?v=94004fb70e",
               "width": 455,
               "height": 455,
               "aspect": 1.0,
               "label": "FadeAmount 0.5",
-              "alt": "FadeAmount 0.5"
+              "alt": "FadeAmount 0.5",
+              "sourceShapeId": 20
             },
             {
-              "src": "assets/ppt/slide294-image23.webp",
+              "src": "assets/ppt/slide294-image23.webp?v=94004fb70e",
               "width": 455,
               "height": 455,
               "aspect": 1.0,
               "label": "FadeAmount 1",
-              "alt": "FadeAmount 1"
+              "alt": "FadeAmount 1",
+              "sourceShapeId": 23
             }
           ],
           "links": [],
           "flow": {
-            "src": "assets/ppt/slide294-flow.webp",
+            "src": "assets/ppt/slide294-flow.webp?v=94004fb70e",
             "width": 1409,
             "height": 111,
+            "aspect": 12.726594,
             "alt": "FadeAmount 전달 → 기존 알파 × 디더 마스크 → 표시 비율 제어 경계 상태 복구",
             "large": false
           },
@@ -480,29 +575,32 @@ window.portfolioData = {
           ],
           "images": [
             {
-              "src": "assets/ppt/slide295-image17.webp",
+              "src": "assets/ppt/slide295-image17.webp?v=94004fb70e",
               "width": 695,
               "height": 649,
               "aspect": 1.069892,
               "label": "적용 전",
-              "alt": "적용 전"
+              "alt": "적용 전",
+              "sourceShapeId": 17
             },
             {
-              "src": "assets/ppt/slide295-image20.webp",
+              "src": "assets/ppt/slide295-image20.webp?v=94004fb70e",
               "width": 695,
               "height": 649,
               "aspect": 1.069892,
               "label": "적용 후",
-              "alt": "적용 후"
+              "alt": "적용 후",
+              "sourceShapeId": 20
             }
           ],
           "links": [
             "https://youtu.be/eEJtQI8Z8t8"
           ],
           "flow": {
-            "src": "assets/ppt/slide295-flow.webp",
+            "src": "assets/ppt/slide295-flow.webp?v=94004fb70e",
             "width": 1429,
             "height": 111,
+            "aspect": 12.909014,
             "alt": "카메라–캐릭터 사이 장애물 탐색 → 이미 처리한 대상 제외 → 가림 물체에 페이드 적용 → 뒤쪽 가림 물체 추가 탐색",
             "large": false
           },
@@ -528,27 +626,30 @@ window.portfolioData = {
           ],
           "images": [
             {
-              "src": "assets/ppt/slide296-image3.webp",
+              "src": "assets/ppt/slide296-image3.webp?v=94004fb70e",
               "width": 695,
               "height": 694,
               "aspect": 1.0,
               "label": "Unreal Insights · 실험 전",
-              "alt": "Unreal Insights · 실험 전"
+              "alt": "Unreal Insights · 실험 전",
+              "sourceShapeId": 3
             },
             {
-              "src": "assets/ppt/slide296-image5.webp",
+              "src": "assets/ppt/slide296-image5.webp?v=94004fb70e",
               "width": 695,
               "height": 694,
               "aspect": 1.0,
               "label": "Unreal Insights · 실험 후",
-              "alt": "Unreal Insights · 실험 후"
+              "alt": "Unreal Insights · 실험 후",
+              "sourceShapeId": 5
             }
           ],
           "links": [],
           "flow": {
-            "src": "assets/ppt/slide296-flow.webp",
+            "src": "assets/ppt/slide296-flow.webp?v=94004fb70e",
             "width": 1429,
             "height": 111,
+            "aspect": 12.909014,
             "alt": "원본 트레이스 분석 → 반복 재진입 확인 → 제한 범위 최적화 실험 → 동일 조건 전후 비교",
             "large": false
           },
@@ -576,25 +677,27 @@ window.portfolioData = {
             },
             {
               "heading": "시간 단축 예시",
-              "body": "5 × 5칸 · 3층 · 수동 30분 → 툴 5분 가정\n약 83% 단축"
+              "body": "5 × 5칸 · 3층 · 수동 30분 내외 → 툴 5분 내외\n약 83% 단축"
             }
           ],
           "images": [
             {
-              "src": "assets/ppt/slide300-image8.webp",
+              "src": "assets/ppt/slide300-image8.webp?v=94004fb70e",
               "width": 695,
               "height": 694,
               "aspect": 1.0,
               "label": "자동 생성 · 건물 외부",
-              "alt": "자동 생성 · 건물 외부"
+              "alt": "자동 생성 · 건물 외부",
+              "sourceShapeId": 8
             },
             {
-              "src": "assets/ppt/slide300-image11.webp",
+              "src": "assets/ppt/slide300-image11.webp?v=94004fb70e",
               "width": 695,
               "height": 694,
               "aspect": 1.0,
               "label": "자동 배치 · 실내 구성",
-              "alt": "자동 배치 · 실내 구성"
+              "alt": "자동 배치 · 실내 구성",
+              "sourceShapeId": 11
             }
           ],
           "links": [
@@ -627,12 +730,13 @@ window.portfolioData = {
           ],
           "images": [
             {
-              "src": "assets/ppt/slide282-image7.webp",
+              "src": "assets/ppt/slide282-image7.webp?v=94004fb70e",
               "width": 1347,
               "height": 974,
               "aspect": 1.384103,
               "label": "",
-              "alt": "층별 평면도 편집 후 Unreal에 적용"
+              "alt": "층별 평면도 편집 후 Unreal에 적용",
+              "sourceShapeId": 7
             }
           ],
           "links": [],
@@ -666,31 +770,34 @@ window.portfolioData = {
           ],
           "images": [
             {
-              "src": "assets/ppt/ardy-reference-console.webp?v=console2",
-              "width": 800,
-              "height": 800,
-              "aspect": 1,
+              "src": "assets/ppt/ardy-reference-console.webp?v=94004fb70e",
+              "width": 695,
+              "height": 694,
+              "aspect": 1.0,
               "label": "생성 모션 · 원본 확인",
               "alt": "생성 모션 · 원본 확인",
-              "video": "assets/ppt/ardy-reference-console.mp4?v=console2"
+              "sourceShapeId": 41,
+              "video": "assets/ppt/ardy-reference-console.mp4?v=94004fb70e"
             },
             {
-              "src": "assets/ppt/ardy-manny-console.webp?v=console2",
-              "width": 800,
-              "height": 800,
-              "aspect": 1,
+              "src": "assets/ppt/ardy-manny-console.webp?v=94004fb70e",
+              "width": 695,
+              "height": 694,
+              "aspect": 1.0,
               "label": "언리얼 캐릭터 · 재생",
               "alt": "언리얼 캐릭터 · 재생",
-              "video": "assets/ppt/ardy-manny-console.mp4?v=console2"
+              "sourceShapeId": 42,
+              "video": "assets/ppt/ardy-manny-console.mp4?v=94004fb70e"
             }
           ],
           "links": [
             "https://youtu.be/SAkwqmnLg-o"
           ],
           "flow": {
-            "src": "assets/ppt/slide297-flow.webp",
+            "src": "assets/ppt/slide297-flow.webp?v=94004fb70e",
             "width": 1429,
             "height": 111,
+            "aspect": 12.909014,
             "alt": "프롬프트 입력 모션 생성 → NPZ·JSON 보관 FBX 변환 → 리타깃 자산 자동 설정 → 완성 클립 언리얼 재생",
             "large": false
           },
@@ -716,27 +823,30 @@ window.portfolioData = {
           ],
           "images": [
             {
-              "src": "assets/ppt/slide298-image42.webp",
+              "src": "assets/ppt/slide298-image42.webp?v=94004fb70e",
               "width": 695,
               "height": 694,
               "aspect": 1.0,
               "label": "보정 전 · 회전 직접 전달",
-              "alt": "보정 전 · 회전 직접 전달"
+              "alt": "보정 전 · 회전 직접 전달",
+              "sourceShapeId": 42
             },
             {
-              "src": "assets/ppt/slide298-image20.webp",
+              "src": "assets/ppt/slide298-image20.webp?v=94004fb70e",
               "width": 695,
               "height": 694,
               "aspect": 1.0,
               "label": "보정 후 · 엔진 IK 리타깃",
-              "alt": "보정 후 · 엔진 IK 리타깃"
+              "alt": "보정 후 · 엔진 IK 리타깃",
+              "sourceShapeId": 20
             }
           ],
           "links": [],
           "flow": {
-            "src": "assets/ppt/slide298-flow.webp",
+            "src": "assets/ppt/slide298-flow.webp?v=94004fb70e",
             "width": 1429,
             "height": 111,
+            "aspect": 12.909014,
             "alt": "축·기준 포즈 확인 → 소스 포즈 재구성 → 엔진 IK 리타깃 → FBX·라이브 출력 비교",
             "large": false
           },
@@ -773,12 +883,13 @@ window.portfolioData = {
           ],
           "images": [
             {
-              "src": "assets/ppt/slide271-image8.webp",
+              "src": "assets/ppt/slide271-image8.webp?v=94004fb70e",
               "width": 1431,
               "height": 803,
               "aspect": 1.781737,
               "label": "",
-              "alt": "DDD"
+              "alt": "DDD",
+              "sourceShapeId": 8
             }
           ],
           "links": [],
@@ -788,7 +899,7 @@ window.portfolioData = {
         {
           "page": 19,
           "slideId": 274,
-          "title": "반복 생성·제거를 오브젝트 재사용으로 전환",
+          "title": "생성·제거를 오브젝트 재사용으로 전환",
           "rows": [
             {
               "heading": "조회 단위",
@@ -806,9 +917,10 @@ window.portfolioData = {
           "images": [],
           "links": [],
           "flow": {
-            "src": "assets/ppt/slide274-flow.webp",
+            "src": "assets/ppt/slide274-flow.webp?v=94004fb70e",
             "width": 1431,
             "height": 1100,
+            "aspect": 1.300909,
             "alt": "생성 요청 → 비활성 객체가 있는가? → 기존 객체 가져오기 → 새 인스턴스 생성 → 예 → 아니요 → 상태 복원 · 활성화",
             "large": true
           },
@@ -834,20 +946,22 @@ window.portfolioData = {
           ],
           "images": [
             {
-              "src": "assets/ppt/slide275-image3.webp",
+              "src": "assets/ppt/slide275-image3.webp?v=94004fb70e",
               "width": 1431,
               "height": 395,
               "aspect": 3.623637,
               "label": "OFF · 생성 / 파괴",
-              "alt": "OFF · 생성 / 파괴"
+              "alt": "OFF · 생성 / 파괴",
+              "sourceShapeId": 3
             },
             {
-              "src": "assets/ppt/slide275-image5.webp",
+              "src": "assets/ppt/slide275-image5.webp?v=94004fb70e",
               "width": 1431,
               "height": 395,
               "aspect": 3.623637,
               "label": "ON · 비활성 객체 재사용",
-              "alt": "ON · 비활성 객체 재사용"
+              "alt": "ON · 비활성 객체 재사용",
+              "sourceShapeId": 5
             }
           ],
           "links": [],
@@ -861,7 +975,7 @@ window.portfolioData = {
   ],
   "source": {
     "file": "전진오_포트폴리오_좌설명_우자료_레이아웃.pptx",
-    "sha256": "4c2b0502af0d7fc5a145a026111282bcf146eacb76dadd229bafc605c7b04ea8",
+    "sha256": "94004fb70efbd0c9f67d57e0bf26c82972f9192f7d3170142be2d21930436ba3",
     "slideCount": 21
   }
 };
