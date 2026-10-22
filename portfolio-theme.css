@@ -46,6 +46,7 @@ html .media-label{font-size:21px;font-weight:var(--heading-weight);line-height:1
 html .slide-measurement{font-size:var(--body-size);line-height:var(--body-leading);color:#000;font-weight:var(--body-weight)}
 html .flow-heading,html .flow-heading button{font-size:15px;color:#000;font-weight:var(--body-weight)}
 html .scope-row{grid-template-columns:minmax(0,1.4fr) minmax(200px,.8fr);gap:42px;padding:30px 0}
+html .scope-page .scope-row{border-top:1px dashed #000}
 html .scope-image{max-width:340px}
 html .contact-list a{font-size:17px;color:#000}
 html .contact-list a>span:last-child{color:var(--accent)}
