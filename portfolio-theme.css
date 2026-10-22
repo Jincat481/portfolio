@@ -29,6 +29,7 @@ html .section-title small,html #projects>.section-title small{font-size:18px;fon
 html #projects .category-nav a{font-size:18px;font-weight:var(--heading-weight);color:#000}
 html #projects .fold-controls,html #projects .fold-controls button{font-size:16px;color:#000;font-weight:var(--body-weight)}
 html .fold-controls button:disabled{opacity:1;text-decoration:line-through}
+html .portfolio-list{border-top:1px solid #000}
 html .category-number{font-size:18px;color:var(--accent);font-weight:var(--heading-weight)}
 html .category-label h2{font-size:36px;color:var(--accent)}
 html .category-label>span{font-size:19px;color:#000}
