@@ -876,8 +876,8 @@ window.portfolioData = {
               "body": "2024.08 ~ 2024.11"
             },
             {
-              "heading": "개발 형태",
-              "body": "팀 프로젝트\nG-STAR 2024 전시"
+              "heading": "개발 인원",
+              "body": "총 2명, 기획 1명 · 프로그래밍 1명"
             },
             {
               "heading": "개발 환경",
