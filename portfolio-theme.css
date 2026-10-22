@@ -51,6 +51,7 @@ html .scope-page .scope-row{border-top:0}
 html .scope-image{max-width:340px}
 html .contact-list a{font-size:17px;color:#000}
 html .contact-list a>span:last-child{color:var(--accent)}
+html #contact>.section-title,html #contact .contact-list a>span:last-child{color:#000}
 html .site-footer{font-size:14px;color:#000}
 html .lightbox p{font-size:17px;color:#000}
 html .result-note h4{font-size:23px}
