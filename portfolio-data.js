@@ -685,7 +685,7 @@ window.portfolioData = {
             }
           ],
           "links": [
-            "assets/ppt/ardy-reference-manny-comparison.mp4?v=console2"
+            "https://youtu.be/SAkwqmnLg-o"
           ],
           "flow": {
             "src": "assets/ppt/slide297-flow.webp",
@@ -861,7 +861,7 @@ window.portfolioData = {
   ],
   "source": {
     "file": "전진오_포트폴리오_좌설명_우자료_레이아웃.pptx",
-    "sha256": "2bcdf49243fee5500764e9198b9d5f6795be0dbd82c44f7f1e171fe410f2fea2",
+    "sha256": "4c2b0502af0d7fc5a145a026111282bcf146eacb76dadd229bafc605c7b04ea8",
     "slideCount": 21
   }
 };
