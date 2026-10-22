@@ -975,7 +975,7 @@ window.portfolioData = {
           "flow": null,
           "extra": [
             "100개 생성 배치 1회 평균: OFF 8.09 ms → ON 3.43 ms\n약 57.6% 감소 · 생성 배치 구간의 처리 비용",
-            "Unity 6.6 Profiler 캡처 분석 · OFF/ON 각 1개 캡처\n114회·118회는 배치 호출 수이며, 별도 실험 횟수나 객체 개수가 아님"
+            "Unity 6.6 Profiler · OFF/ON 각 1회 캡처"
           ]
         }
       ]
