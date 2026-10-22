@@ -64,6 +64,8 @@
       const image = document.querySelector('#lightbox-image');
       image.src = zoom.dataset.lightbox;
       image.alt = zoom.dataset.caption || '프로젝트 자료';
+      const thumbnail = zoom.querySelector('img');
+      image.style.filter = thumbnail ? getComputedStyle(thumbnail).filter : 'none';
       document.querySelector('#lightbox-caption').textContent = zoom.dataset.caption || '';
       lightbox.showModal();
       document.body.classList.add('zoom-open');
