@@ -46,7 +46,7 @@ html .media-label{font-size:21px;font-weight:var(--heading-weight);line-height:1
 html .slide-measurement{font-size:var(--body-size);line-height:var(--body-leading);color:#000;font-weight:var(--body-weight)}
 html .flow-heading,html .flow-heading button{font-size:15px;color:#000;font-weight:var(--body-weight)}
 html .scope-row{grid-template-columns:minmax(0,1.4fr) minmax(200px,.8fr);gap:42px;padding:30px 0}
-html .scope-page .scope-row{border-top:1px dashed #000}
+html .scope-page .scope-row{border-top:0}
 html .scope-image{max-width:340px}
 html .contact-list a{font-size:17px;color:#000}
 html .contact-list a>span:last-child{color:var(--accent)}
@@ -76,6 +76,9 @@ html .portfolio-page>h3{border-left:5px solid var(--accent);padding-left:18px}
 html .slide-note{border-top:0;border-left:3px solid var(--accent);padding:0 0 0 18px;margin:0 0 32px}
 html .scope-row .slide-note{padding:0 0 0 18px;margin:0}
 html .scope-row .slide-links{padding-left:18px}
+html .scope-page .scope-row .slide-note{border:0;padding-left:0}
+html .scope-page .scope-row .slide-note h4{width:fit-content;padding-bottom:8px;border-bottom:2px solid var(--accent)}
+html .scope-page .scope-row .slide-links{padding-left:0}
 @media(max-width:900px){
 html .page-shell,html .site-footer{padding-left:28px;padding-right:28px}
 html .hero{grid-template-columns:minmax(0,1fr) 180px;gap:32px}
