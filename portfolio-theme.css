@@ -23,19 +23,19 @@ html .section-caption{font-size:18px;font-weight:var(--heading-weight);color:#00
 html .stack-group h3{font-size:24px;font-weight:var(--heading-weight);color:#000;margin-bottom:22px}
 html .stack-group .stack-icons span{font-size:16px;font-weight:var(--body-weight)}
 html .stack-icons img{filter:none}
-html .section-title,html #projects>.section-title{font-size:28px;font-weight:var(--heading-weight);color:var(--accent)}
+html .section-title{font-size:28px;font-weight:var(--heading-weight);color:var(--accent)}
+html #projects>.section-title{color:#000}
 html .section-title small,html #projects>.section-title small{font-size:18px;font-weight:var(--body-weight);color:#000}
-html #projects .category-nav a{font-size:18px;font-weight:var(--heading-weight)}
+html #projects .category-nav a{font-size:18px;font-weight:var(--heading-weight);color:#000}
 html #projects .fold-controls,html #projects .fold-controls button{font-size:16px;color:#000;font-weight:var(--body-weight)}
 html .fold-controls button:disabled{opacity:1;text-decoration:line-through}
 html .category-number{font-size:18px;color:var(--accent);font-weight:var(--heading-weight)}
 html .category-label h2{font-size:36px;color:var(--accent)}
 html .category-label>span{font-size:19px;color:#000}
 html .category-toggle{font-size:16px;color:var(--accent);font-weight:var(--heading-weight)}
-html .portfolio-page{padding:46px 0}
-/* A second line marks the boundary between consecutive portfolio pages. */
-html .portfolio-page + .portfolio-page{position:relative;padding-top:66px}
-html .portfolio-page + .portfolio-page::before{content:"";position:absolute;top:20px;left:0;right:0;border-top:1px solid #000;pointer-events:none}
+html .portfolio-category{border-top:0}
+html .portfolio-category>summary{border-bottom:1px solid var(--accent)}
+html .portfolio-page{padding:46px 0;border-top:0}
 html .portfolio-page h3{font-size:var(--page-title-size);line-height:1.55;color:var(--accent);margin-bottom:32px}
 html .slide-layout{grid-template-columns:minmax(310px,.95fr) minmax(0,1.8fr);gap:42px}
 html .slide-note{padding:20px 0 26px}
@@ -72,13 +72,12 @@ html .media-count-3 .has-media-annotation .zoom-media img{height:auto;object-fit
 html .media-count-3 .media-annotation{margin-top:12px;font-size:16px;line-height:1.7;color:#000;font-weight:600;white-space:pre-line;word-break:keep-all}
 html [data-slide-id="275"] .slide-media{grid-template-columns:minmax(0,1fr);gap:24px}
 
-html .portfolio-page>h3{border-left:5px solid var(--accent);padding-left:18px}
+html .portfolio-page>h3{padding-bottom:18px;border-bottom:1px solid var(--accent)}
 html .slide-note{border-top:0;border-left:3px solid var(--accent);padding:0 0 0 18px;margin:0 0 32px}
 html .scope-row .slide-note{padding:0 0 0 18px;margin:0}
 html .scope-row .slide-links{padding-left:18px}
 html .scope-page .scope-row .slide-note{border:0;padding-left:0}
 html .scope-page .scope-row .slide-links{padding-left:0}
-html .portfolio-page.scope-page>h3{border-left:0;padding-left:0;padding-bottom:18px;border-bottom:1px solid var(--accent)}
 @media(max-width:900px){
 html .page-shell,html .site-footer{padding-left:28px;padding-right:28px}
 html .hero{grid-template-columns:minmax(0,1fr) 180px;gap:32px}
