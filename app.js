@@ -4,7 +4,7 @@
   const lightbox = document.querySelector('#lightbox');
   const Escape = (Value) => String(Value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
   const Note = (Row) => `<div class="slide-note"><h4>${Escape(Row.heading)}</h4><p>${Escape(Row.body)}</p></div>`;
-  const Links = (Values) => Values.length ? `<div class="slide-links">${Values.map(value => `<a href="${Escape(value)}" target="_blank" rel="noopener noreferrer">${value.includes('youtu') ? 'YouTube에서 영상 보기' : 'GitHub에서 코드 보기'} <span aria-hidden="true">↗</span></a>`).join('')}</div>` : '';
+  const Links = (Values) => Values.length ? `<div class="slide-links">${Values.map(value => `<a href="${Escape(value)}" target="_blank" rel="noopener noreferrer">${value.includes('youtu') ? 'YouTube에서 영상 보기' : /\.mp4(?:[?#]|$)/i.test(value) ? '비교 영상 보기' : 'GitHub에서 코드 보기'} <span aria-hidden="true">↗</span></a>`).join('')}</div>` : '';
 
   function Media(Item) {
     const content = Item.video
@@ -20,12 +20,12 @@
   function Page(Item, Category) {
     const id = `${Category.id}-page-${Item.page}`;
     const notes = Item.rows.map(Note).join('');
-    if (Item.scope) return `<section class="portfolio-page scope-page" id="${id}"><h3>${Escape(Item.title)}</h3><div class="scope-grid">${notes}</div></section>`;
+    if (Item.scope) return `<section class="portfolio-page scope-page" id="${id}" data-slide-id="${Item.slideId}"><h3>${Escape(Item.title)}</h3><div class="scope-grid">${notes}</div></section>`;
     const gallery = Item.images.length ? `<div class="slide-media media-count-${Item.images.length}">${Item.images.map(Media).join('')}</div>` : '';
     const mainFlow = Item.flow?.large ? Flow(Item.flow) : '';
     const bottomFlow = Item.flow && !Item.flow.large ? Flow(Item.flow) : '';
     const extras = Item.extra.map(text => `<p class="slide-measurement">${Escape(text)}</p>`).join('');
-    return `<section class="portfolio-page" id="${id}"><h3>${Escape(Item.title)}</h3><div class="slide-layout"><div class="slide-description">${notes}${Links(Item.links)}</div><div class="slide-visual">${gallery}${mainFlow}${extras}${bottomFlow}</div></div></section>`;
+    return `<section class="portfolio-page" id="${id}" data-slide-id="${Item.slideId}"><h3>${Escape(Item.title)}</h3><div class="slide-layout"><div class="slide-description">${notes}${Links(Item.links)}</div><div class="slide-visual">${gallery}${mainFlow}${extras}${bottomFlow}</div></div></section>`;
   }
 
   document.querySelector('#project-list').innerHTML = data.categories.map((category, index) => `<details class="portfolio-category" id="${category.id}" open><summary><span class="category-number">${String(index + 1).padStart(2,'0')}</span><span class="category-label"><h2>${Escape(category.title)}</h2><span>${Escape(category.subtitle)}</span></span><span class="category-toggle" aria-hidden="true"><span class="when-open">접기 −</span><span class="when-closed">펼치기 ＋</span></span></summary><div class="category-content">${category.pages.map(page => Page(page, category)).join('')}</div></details>`).join('');
