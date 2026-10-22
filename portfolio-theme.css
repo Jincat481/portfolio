@@ -119,3 +119,4 @@ html .media-count-3 .media-annotation{font-size:16px}
 
 /* Match the replacement action image to the existing combat frame. */
 #moonlight-page-3 .scope-row:nth-child(3) .scope-image img{aspect-ratio:1955936/1524000;object-fit:cover;object-position:center}
+#moonlight-page-3 .scope-row+.scope-row{border-top:1px solid #000}
