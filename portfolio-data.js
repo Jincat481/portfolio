@@ -88,10 +88,10 @@ window.portfolioData = {
               "heading": "능력과 플레이어 액션",
               "body": "발각도·은신, 포션·대시·웅크리기\n상호작용 대상 선택과 안내 UI·입력\n무기 납도·발도",
               "image": {
-                "src": "assets/ppt/slide259-image22.webp?v=94004fb70e",
-                "width": 534,
-                "height": 305,
-                "aspect": 1.753425,
+                "src": "assets/ppt/slide259-player-action-20261023.webp",
+                "width": 1918,
+                "height": 1028,
+                "aspect": 1.865759,
                 "label": "",
                 "alt": "능력과 플레이어 액션 구현 화면",
                 "sourceShapeId": 22
@@ -121,10 +121,10 @@ window.portfolioData = {
               "sourceShapeId": 19
             },
             {
-              "src": "assets/ppt/slide259-image22.webp?v=94004fb70e",
-              "width": 534,
-              "height": 305,
-              "aspect": 1.753425,
+              "src": "assets/ppt/slide259-player-action-20261023.webp",
+              "width": 1918,
+              "height": 1028,
+              "aspect": 1.865759,
               "label": "",
               "alt": "월하일검 · 담당 구현 범위",
               "sourceShapeId": 22
