@@ -32,7 +32,7 @@ html .fold-controls button:disabled{opacity:1;text-decoration:line-through}
 html .category-number{font-size:18px;color:var(--accent);font-weight:var(--heading-weight)}
 html .category-label h2{font-size:36px;color:var(--accent)}
 html .category-label>span{font-size:19px;color:#000}
-html .category-toggle{font-size:16px;color:var(--accent);font-weight:var(--heading-weight)}
+html .category-toggle{font-size:16px;color:#000;font-weight:var(--heading-weight)}
 html .portfolio-category{border-top:0}
 html .portfolio-category>summary{border-bottom:1px solid var(--accent)}
 html .portfolio-page{padding:46px 0;border-top:0}
