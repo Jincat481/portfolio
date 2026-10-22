@@ -27,7 +27,12 @@
     const gallery = Item.images.length ? `<div class="slide-media media-count-${Item.images.length}" style="--gallery-ratio:${galleryRatio}">${Item.images.map(Image => Media(Image, Item.images.length === 3)).join('')}</div>` : '';
     const mainFlow = Item.flow?.large ? Flow(Item.flow, Item.slideId) : '';
     const bottomFlow = Item.flow && !Item.flow.large ? Flow(Item.flow, Item.slideId) : '';
-    const extras = Item.extra.map(text => `<p class="slide-measurement">${Escape(text)}</p>`).join('');
+    const extras = Item.extra.map(text => {
+      const content = /^G-STAR \d{4} 전시 \(예정\)$/.test(text)
+        ? `${Escape(text.slice(0, -4))}<span class="exhibition-status">(예정)</span>`
+        : Escape(text);
+      return `<p class="slide-measurement">${content}</p>`;
+    }).join('');
     const achievement = Item.achievement ? `<div class="page-achievement"><p class="achievement-title">${Escape(Item.achievement.lead)} <strong>${Escape(Item.achievement.emphasis)}</strong></p><p class="achievement-description">${Escape(Item.achievement.description)}</p></div>` : '';
     return `<section class="portfolio-page" id="${id}" data-slide-id="${Item.slideId}">${heading}${achievement}<div class="slide-layout"><div class="slide-description">${notes}${Links(Item.links)}</div><div class="slide-visual">${gallery}${mainFlow}${extras}${bottomFlow}</div></div></section>`;
   }
