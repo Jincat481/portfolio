@@ -322,15 +322,15 @@ window.portfolioData = {
           "rows": [
             {
               "heading": "IK 적용 시 문제",
-              "body": "이동 중 손발이 IK 목표에 고정돼\n팔다리 교차로 원본 동작이 변형됨"
+              "body": "이동 중 손발이 IK 목표에 고정\n팔다리 교차로 원본 동작 변형"
             },
             {
               "heading": "원인 분석",
-              "body": "사지별 접촉 구간을 구분하지 않고\n같은 IK 제약을 일괄 적용함"
+              "body": "사지별 접촉 구간 미구분\n동일 IK 제약 일괄 적용"
             },
             {
               "heading": "현재 적용 범위",
-              "body": "사다리 손 IK는 기본 비활성으로 둠\n원본 애니메이션과 루트 모션 유지함\n이동 종료 후 정지 자세로 연결함"
+              "body": "사다리 손 IK 기본 비활성\n원본 애니메이션과 루트 모션 유지\n이동 종료 후 정지 자세로 연결"
             }
           ],
           "images": [
@@ -355,11 +355,11 @@ window.portfolioData = {
           "rows": [
             {
               "heading": "반복 설정 문제",
-              "body": "높이에 맞춰 사다리 길이를 조정하고\n진입점과 콜리전 위치를 개별 설정"
+              "body": "높이에 맞춘 사다리 길이 조정\n진입점·콜리전 위치 개별 설정"
             },
             {
               "heading": "배치 자동화",
-              "body": "상·하단 바닥 높이를 탐색해\n25cm 구간을 조립하고\n진입점·콜리전을 함께 배치"
+              "body": "상·하단 바닥 높이 탐색\n25cm 구간 조립\n진입점·콜리전 함께 배치"
             },
             {
               "heading": "작업 방식 개선",
@@ -457,15 +457,15 @@ window.portfolioData = {
           "rows": [
             {
               "heading": "비교한 문제",
-              "body": "Translucent로 머리를 흐리게 하면\n겹친 헤어 카드의 정렬 문제가 발생함"
+              "body": "Translucent로 머리를 흐리게 하면\n겹친 헤어 카드에서 정렬 문제 발생"
             },
             {
               "heading": "대응 방법 검토",
-              "body": "Sort Priority로 표시 순서를 조정함\n시점별 겹침은 추가 검증이 필요함"
+              "body": "Sort Priority로 표시 순서 조정\n시점별 겹침은 추가 검증 필요"
             },
             {
               "heading": "선택한 방식",
-              "body": "정렬 관리와 반투명 비용을 고려해\nMasked + 디더로 페이드를 구현함"
+              "body": "정렬 관리와 반투명 비용을 고려해\nMasked + 디더로 페이드 구현"
             }
           ],
           "images": [
@@ -624,7 +624,7 @@ window.portfolioData = {
             },
             {
               "heading": "재진입 제한 실험",
-              "body": "같은 프레임에 끝난 순찰 요청의\n재진입을 제한하고 이동 순서 유지"
+              "body": "같은 프레임에 끝난 순찰 요청의 재진입 제한\n이동 순서는 유지"
             },
             {
               "heading": "StateTree 처리 비용",
@@ -686,7 +686,7 @@ window.portfolioData = {
             },
             {
               "heading": "생성 후 수정 지원",
-              "body": "생성한 건물의 층별 평면도에서\n벽·문·창문과 계단 배치를 수정"
+              "body": "생성한 건물의 층별 평면도에서\n벽·문·창문과 계단 배치 수정"
             }
           ],
           "images": [
@@ -908,6 +908,54 @@ window.portfolioData = {
           ]
         },
         {
+          "page": "18-exhibition",
+          "slideId": 302,
+          "title": "G-STAR 2024 전시",
+          "rows": [
+            {
+              "heading": "전시 일정",
+              "body": "2024.11.14 ~ 2024.11.17"
+            },
+            {
+              "heading": "전시 장소",
+              "body": "부산 BEXCO"
+            },
+            {
+              "heading": "현장 역할",
+              "body": "부스 운영\n현장 시연"
+            }
+          ],
+          "images": [
+            {
+              "src": "assets/ppt/ddd-exhibit-01.webp?v=20261023-exhibit-photo",
+              "width": 1431,
+              "height": 1073,
+              "aspect": 1.3336439888164027,
+              "label": "DDD 전시 부스",
+              "alt": "DDD 안내 자료를 든 참가자 두 명과 프로젝트 전시 부스"
+            },
+            {
+              "src": "assets/ppt/ddd-exhibit-02.webp?v=20261023-exhibit-photo",
+              "width": 1431,
+              "height": 1073,
+              "aspect": 1.3336439888164027,
+              "label": "G-STAR 2024 현장",
+              "alt": "G-STAR 2024 행사장 앞에서 촬영한 참가자 세 명"
+            },
+            {
+              "src": "assets/ppt/ddd-exhibit-03.webp?v=20261023-exhibit-photo",
+              "width": 1431,
+              "height": 1073,
+              "aspect": 1.3336439888164027,
+              "label": "DDD 현장 시연",
+              "alt": "전시 부스의 모니터에서 실행 중인 DDD 게임 화면"
+            }
+          ],
+          "links": [],
+          "flow": null,
+          "extra": []
+        },
+        {
           "page": 19,
           "slideId": 274,
           "title": "생성·제거를 오브젝트 재사용으로 전환",
@@ -978,7 +1026,7 @@ window.portfolioData = {
           "links": [],
           "flow": null,
           "extra": [
-            "100개 생성 배치 1회 평균: OFF 8.09 ms → ON 3.43 ms\n약 57.6% 감소 · 생성 배치 구간의 처리 비용",
+            "100개 생성 배치 1회 평균(대표 캡처 기준): OFF 8.09 ms → ON 3.43 ms\n약 57.6% 감소 · 생성 배치 구간의 처리 비용",
             "Unity 6.6 Profiler · OFF/ON 각 1회 캡처"
           ]
         }
