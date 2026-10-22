@@ -864,7 +864,7 @@ window.portfolioData = {
     {
       "id": "ddd",
       "title": "DDD",
-      "subtitle": "Unity 러닝 액션 게임 · 클라이언트 프로그래밍",
+      "subtitle": "Unity 러닝 액션 게임",
       "pages": [
         {
           "page": 18,
@@ -885,7 +885,7 @@ window.portfolioData = {
             },
             {
               "heading": "담당 업무",
-              "body": "클라이언트 프로그래밍\n캐릭터 조작 · 패턴 기반 장애물 생성\nUI · 점수 시스템\n오브젝트 풀링 최적화"
+              "body": "캐릭터 조작 · 패턴 기반 장애물 생성\nUI · 점수 시스템\n오브젝트 풀링 최적화\n(레벨 기획 제외)"
             }
           ],
           "images": [
