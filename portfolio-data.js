@@ -12,7 +12,7 @@ window.portfolioData = {
           "rows": [
             {
               "heading": "개발 기간",
-              "body": "2026.03 ~ 2026.11\n8개월"
+              "body": "2026.02 ~ 진행 중"
             },
             {
               "heading": "개발 인원",
@@ -316,19 +316,19 @@ window.portfolioData = {
         {
           "page": 7,
           "slideId": 301,
-          "title": "사다리 IK 적용 시 자세 변형",
+          "title": "사다리 IK 적용 시 자세 변형과 비활성 판단",
           "rows": [
             {
               "heading": "IK 적용 시 문제",
-              "body": "이동해야 할 손발까지 목표에 고정\n팔다리 교차와 원본 동작 변형"
+              "body": "이동 중 손발이 IK 목표에 고정돼\n팔다리 교차로 원본 동작이 변형됨"
             },
             {
-              "heading": "원인 확인",
-              "body": "사지별 접촉 상태 구분 없이 IK 적용\n애니메이션 보폭과 이동 거리 불일치"
+              "heading": "적용 범위 검토",
+              "body": "이동 중 손 고정이 동작을 방해함\n접촉 구간을 구분한 IK 적용이 필요함"
             },
             {
               "heading": "현재 적용 범위",
-              "body": "사다리 손 IK 기본 비활성\n원본 애니메이션과 루트 모션 유지\n이동 종료 후 정지 자세 연결"
+              "body": "사다리 손 IK는 기본 비활성으로 둠\n원본 애니메이션과 루트 모션 유지함\n이동 종료 후 정지 자세로 연결함"
             }
           ],
           "images": [
@@ -352,16 +352,16 @@ window.portfolioData = {
           "title": "사다리 자동 배치 툴",
           "rows": [
             {
-              "heading": "작업 시간이 길었던 문제",
-              "body": "사다리 길이 · 진입점 · 콜리전 위치를\n레벨 디자이너가 높이에 맞춰 \n콜리전 및 사다리 수동 조정"
+              "heading": "반복 설정 문제",
+              "body": "높이에 맞춰 사다리 길이를 조정하고\n진입점과 콜리전 위치를 개별 설정"
             },
             {
               "heading": "배치 자동화",
-              "body": "상·하단 바닥 높이 탐색\n25cm 구간 조립과 진입점 · 콜리전\n위치를 한 번에 적용"
+              "body": "상·하단 바닥 높이를 탐색해\n25cm 구간을 조립하고\n진입점·콜리전을 함께 배치"
             },
             {
-              "heading": "자동화 툴에 따른 시간 단축",
-              "body": "사다리 1개 배치\n수동 10분 내외 → 툴 2분 내외\n약 80% 단축"
+              "heading": "작업 방식 개선",
+              "body": "길이·진입점·콜리전의 개별 조정을\nPreview 확인 후 일괄 적용으로 전환"
             }
           ],
           "images": [
@@ -455,15 +455,15 @@ window.portfolioData = {
           "rows": [
             {
               "heading": "비교한 문제",
-              "body": "Translucent로 머리를 흐리게 해도\n겹친 머리카드의 정렬 대응 필요"
+              "body": "Translucent로 머리를 흐리게 하면\n겹친 헤어 카드의 정렬 문제가 발생함"
             },
             {
               "heading": "대응 방법 검토",
-              "body": "Sort Priority 조정으로 순서 대응\n시점이 바뀐 뒤의 겹침도 추가 검증"
+              "body": "Sort Priority로 표시 순서를 조정함\n시점별 겹침은 추가 검증이 필요함"
             },
             {
               "heading": "선택한 방식",
-              "body": "정렬 관리와 반투명 비용을 고려해\nMasked + 디더로 전환 방식 선택"
+              "body": "정렬 관리와 반투명 비용을 고려해\nMasked + 디더로 페이드를 구현함"
             }
           ],
           "images": [
@@ -477,14 +477,14 @@ window.portfolioData = {
               "sourceShapeId": 22
             },
             {
-              "src": "assets/ppt/slide293-image24.webp?v=94004fb70e",
-              "width": 623,
-              "height": 558,
-              "aspect": 1.116329,
+              "src": "assets/ppt/slide293-image24.webp?v=20261023-hair-card",
+              "width": 454,
+              "height": 340,
+              "aspect": 1.3352941176470587,
               "label": "Translucent",
-              "alt": "Translucent · 머리카드 겹침\n정렬 문제",
+              "alt": "Translucent · 헤어 카드 겹침과 정렬 문제",
               "annotations": [
-                "머리카드 겹침\n정렬 문제"
+                "헤어 카드 겹침\n정렬 문제"
               ],
               "sourceShapeId": 24
             },
@@ -614,19 +614,19 @@ window.portfolioData = {
         {
           "page": 13,
           "slideId": 296,
-          "title": "최적화",
+          "title": "순찰 재진입 제한 실험",
           "rows": [
             {
               "heading": "반복 진입 확인",
-              "body": "한 틱 안에서 순찰 진입과\n이동 요청 실패가 연속 발생"
+              "body": "한 틱 안에서 순찰 상태에 재진입하며\n이동 요청 실패가 연속으로 발생"
             },
             {
               "heading": "재진입 제한 실험",
-              "body": "같은 프레임에 끝난 요청에만\n기본 0.1초 대기 적용\n목표·속도·경로 순서는 유지"
+              "body": "같은 프레임에 끝난 순찰 요청의\n재진입을 제한하고 이동 순서 유지"
             },
             {
-              "heading": "비용 변화 확인",
-              "body": "StateTree 14.46 → 2.88 ms\n특정 레벨에서의 FPS 개선 약 1.6%"
+              "heading": "StateTree 처리 비용",
+              "body": "StateTree 14.46 → 2.88 ms\n프레임당 평균 약 80.1% 감소"
             }
           ],
           "images": [
@@ -635,8 +635,8 @@ window.portfolioData = {
               "width": 695,
               "height": 694,
               "aspect": 1.0,
-              "label": "Unreal Insights · 실험 전",
-              "alt": "Unreal Insights · 실험 전",
+              "label": "Unreal Insights · 전(대표 프레임)",
+              "alt": "Unreal Insights · 전(대표 프레임)",
               "sourceShapeId": 3
             },
             {
@@ -644,8 +644,8 @@ window.portfolioData = {
               "width": 695,
               "height": 694,
               "aspect": 1.0,
-              "label": "Unreal Insights · 실험 후",
-              "alt": "Unreal Insights · 실험 후",
+              "label": "Unreal Insights · 후(대표 프레임)",
+              "alt": "Unreal Insights · 후(대표 프레임)",
               "sourceShapeId": 5
             }
           ],
@@ -658,7 +658,9 @@ window.portfolioData = {
             "alt": "원본 트레이스 분석 → 반복 재진입 확인 → 제한 범위 최적화 실험 → 동일 조건 전후 비교",
             "large": false
           },
-          "extra": []
+          "extra": [
+            "UE 5.7 · D3D12 PIE · 1920×1080\nLv_Taewoo · 고정 시점 · 40초 워밍업\n15초 × 5구간: OFF 3 / ON 2\nGPU 렌더링 켬 · 화면 출력 생략"
+          ]
         }
       ]
     },
@@ -677,12 +679,12 @@ window.portfolioData = {
               "body": "벽 · 바닥 · 계단을 모듈별로 배치\n층 연결·조명·아이템 지점 반복 설정"
             },
             {
-              "heading": "생성·배치 자동화",
-              "body": "크기 · 층수 · 시드로 평면 생성\n층 연결 후처리와 Unreal 배치 일괄 처리\n세부 구성은 생성 후 직접 편집"
+              "heading": "반복 작업 자동화",
+              "body": "크기·층수·시드로 평면 생성\n층 연결과 Unreal 배치를 일괄 처리\n세부 구성은 생성 후 직접 편집"
             },
             {
-              "heading": "시간 단축 예시",
-              "body": "5 × 5칸 · 3층 · 수동 30분 내외 → 툴 5분 내외\n약 83% 단축"
+              "heading": "생성 후 수정 지원",
+              "body": "생성한 건물의 층별 평면도에서\n벽·문·창문과 계단 배치를 수정"
             }
           ],
           "images": [
@@ -862,7 +864,7 @@ window.portfolioData = {
     {
       "id": "ddd",
       "title": "DDD",
-      "subtitle": "Unity 러닝 액션 게임 · 전반적인 게임 개발",
+      "subtitle": "Unity 러닝 액션 게임 · 클라이언트 프로그래밍",
       "pages": [
         {
           "page": 18,
@@ -883,7 +885,7 @@ window.portfolioData = {
             },
             {
               "heading": "담당 업무",
-              "body": "프로그래밍\n레벨 기획 제외"
+              "body": "클라이언트 프로그래밍\n캐릭터 조작 · 패턴 기반 장애물 생성\nUI · 점수 시스템\n오브젝트 풀링 최적화"
             }
           ],
           "images": [
@@ -938,15 +940,15 @@ window.portfolioData = {
           "rows": [
             {
               "heading": "비교 조건",
-              "body": "같은 씬 · 같은 패턴\n배치당 생성 개수 100개로 통일"
+              "body": "Unity Profiler · 동일 씬·패턴\nPlay 재시작 · 생성 배치당 100개"
             },
             {
               "heading": "구간 분리",
               "body": "Spawn · Create · Release\nProfilerMarker로 비용 구분"
             },
             {
-              "heading": "확인 항목",
-              "body": "최초 생성과 재사용 구간 분리\n생성·재사용·반환 횟수 확인"
+              "heading": "측정 표본",
+              "body": "100개 생성 배치의 호출 횟수\n풀링 OFF 114회 / ON 118회"
             }
           ],
           "images": [
@@ -972,7 +974,8 @@ window.portfolioData = {
           "links": [],
           "flow": null,
           "extra": [
-            "100개 생성 배치 평균: OFF 8.09 ms → ON 3.43 ms\nOFF 114회 / ON 118회"
+            "100개 생성 배치 1회 평균: OFF 8.09 ms → ON 3.43 ms\n약 57.6% 감소 · 생성 배치 구간의 처리 비용",
+            "Unity 6.6 Profiler 캡처 분석 · OFF/ON 각 1개 캡처\n114회·118회는 배치 호출 수이며, 별도 실험 횟수나 객체 개수가 아님"
           ]
         }
       ]

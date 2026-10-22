@@ -18,7 +18,7 @@
       }
     }
   });
-  const resultPhrases = ['약 80% 단축','약 83% 단축','StateTree 14.46 → 2.88 ms','약 1.6%','OFF 8.09 ms → ON 3.43 ms'];
+  const resultPhrases = ['StateTree 14.46 → 2.88 ms','약 80.1% 감소','OFF 8.09 ms → ON 3.43 ms','약 57.6% 감소'];
   document.querySelectorAll('.slide-note p,.slide-measurement').forEach(Paragraph => {
     for (const phrase of resultPhrases) {
       const walker = document.createTreeWalker(Paragraph, NodeFilter.SHOW_TEXT);
