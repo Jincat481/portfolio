@@ -4,9 +4,13 @@
   const lightbox = document.querySelector('#lightbox');
   const Escape = (Value) => String(Value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
   const Note = (Row) => `<div class="slide-note"><h4>${Escape(Row.heading)}</h4><p>${Escape(Row.body)}</p></div>`;
-  const Links = (Values) => Values.length ? `<div class="slide-links">${Values.map(value => `<a href="${Escape(value)}" target="_blank" rel="noopener noreferrer">${value.includes('youtu') ? 'YouTube에서 영상 보기' : /\.mp4(?:[?#]|$)/i.test(value) ? '비교 영상 보기' : 'GitHub에서 코드 보기'} <span aria-hidden="true">↗</span></a>`).join('')}</div>` : '';
+  const Links = (Values, Label) => Values.length ? `<div class="slide-links">${Values.map(value => `<a href="${Escape(value)}" target="_blank" rel="noopener noreferrer">${Label ? Escape(Label) : value.includes('youtu') ? 'YouTube에서 영상 보기' : /\.mp4(?:[?#]|$)/i.test(value) ? '비교 영상 보기' : 'GitHub에서 코드 보기'} <span aria-hidden="true">↗</span></a>`).join('')}</div>` : '';
 
   function Media(Item, Gallery = false) {
+    if (Item.youtubeId) {
+      const videoId = encodeURIComponent(Item.youtubeId);
+      return `<figure><p class="media-label">${Escape(Item.label)}</p><iframe class="trailer-player" title="${Escape(Item.alt)}" src="https://www.youtube.com/embed/${videoId}?enablejsapi=1" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></figure>`;
+    }
     const content = Item.video
       ? `<video controls playsinline preload="none" poster="${Escape(Item.src)}" style="aspect-ratio:${Item.aspect}" aria-label="${Escape(Item.alt)}"><source src="${Escape(Item.video)}" type="video/mp4">동영상을 재생할 수 없습니다. <a href="${Escape(Item.video)}">영상 열기</a></video>`
       : `<button type="button" class="zoom-media" data-lightbox="${Escape(Item.src)}" data-caption="${Escape(Item.alt)}" aria-label="${Escape(Item.alt)} 확대"><img src="${Escape(Item.src)}" width="${Item.width}" height="${Item.height}" alt="${Escape(Item.alt)}" loading="lazy" decoding="async"></button>`;
@@ -34,7 +38,7 @@
       return `<p class="slide-measurement">${content}</p>`;
     }).join('');
     const achievement = Item.achievement ? `<div class="page-achievement"><p class="achievement-title">${Escape(Item.achievement.lead)} <strong>${Escape(Item.achievement.emphasis)}</strong></p><p class="achievement-description">${Escape(Item.achievement.description)}</p></div>` : '';
-    return `<section class="portfolio-page" id="${id}" data-slide-id="${Item.slideId}">${heading}${achievement}<div class="slide-layout"><div class="slide-description">${notes}${Links(Item.links)}</div><div class="slide-visual">${gallery}${mainFlow}${extras}${bottomFlow}</div></div></section>`;
+    return `<section class="portfolio-page" id="${id}" data-slide-id="${Item.slideId}">${heading}${achievement}<div class="slide-layout"><div class="slide-description">${notes}${Links(Item.links, Item.linkLabel)}</div><div class="slide-visual">${gallery}${mainFlow}${extras}${bottomFlow}</div></div></section>`;
   }
 
   document.querySelector('#project-list').innerHTML = data.categories.map((category, index) => `<details class="portfolio-category" id="${category.id}" open><summary><span class="category-number">${String(index + 1).padStart(2,'0')}</span><span class="category-label"><h2>${Escape(category.title)}</h2><span>${Escape(category.subtitle)}</span></span><span class="category-toggle" aria-hidden="true"><span class="when-open">접기 −</span><span class="when-closed">펼치기 ＋</span></span></summary><div class="category-content">${category.pages.map(page => Page(page, category)).join('')}</div></details>`).join('');
@@ -54,7 +58,12 @@
   expand.addEventListener('click', () => SetExpanded(true));
   collapse.addEventListener('click', () => SetExpanded(false));
   categories.forEach(category => category.addEventListener('toggle', () => {
-    if (!category.open) category.querySelectorAll('video').forEach(video => video.pause());
+    if (!category.open) {
+      category.querySelectorAll('video').forEach(video => video.pause());
+      category.querySelectorAll('.trailer-player').forEach(frame => frame.contentWindow?.postMessage(
+        JSON.stringify({event:'command',func:'pauseVideo',args:[]}), 'https://www.youtube.com'
+      ));
+    }
     UpdateControls();
   }));
   UpdateControls();

@@ -2,13 +2,13 @@ window.portfolioData = {
   "categories": [
     {
       "id": "moonlight",
-      "title": "월하일검",
+      "title": "월하일검 (LUNA BLADE)",
       "subtitle": "잠입 액션 게임 · 전투·파쿠르·카메라·플레이어 액션",
       "pages": [
         {
           "page": 2,
           "slideId": 258,
-          "title": "월하일검",
+          "title": "월하일검 (LUNA BLADE)",
           "rows": [
             {
               "heading": "개발 기간",
@@ -29,23 +29,20 @@ window.portfolioData = {
           ],
           "images": [
             {
-              "src": "assets/ppt/slide258-image8.webp?v=94004fb70e",
-              "width": 1431,
-              "height": 816,
-              "aspect": 1.753425,
-              "label": "",
-              "alt": "월하일검",
-              "sourceShapeId": 8,
-              "video": "assets/ppt/slide258-video8.mp4?v=94004fb70e"
+              "youtubeId": "h8IGkNKCJm0",
+              "aspect": 1.777778,
+              "label": "공식 트레일러",
+              "alt": "월하일검 (LUNA BLADE) 트레일러"
             }
           ],
           "links": [
-            "https://youtu.be/dlEksnzpNKM"
+            "https://youtu.be/h8IGkNKCJm0"
           ],
           "flow": null,
           "extra": [
             "G-STAR 2026 전시"
-          ]
+          ],
+          "linkLabel": "YouTube에서 트레일러 보기"
         },
         {
           "page": 3,
@@ -1152,7 +1149,7 @@ window.portfolioData = {
   ],
   "source": {
     "file": "전진오_포트폴리오.pptx",
-    "sha256": "e7f5dfb7a7b4e456f1f41a45b28fccec6a3705fb257dcdec215c207c2dd503b8",
+    "sha256": "0eb291724e752b8b637d925df2f006159623e35108bbbbb6b9907b9d41e89815",
     "slideCount": 25
   }
 };
