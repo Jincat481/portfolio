@@ -45,6 +45,54 @@ window.portfolioData = {
           "linkLabel": "YouTube에서 트레일러 보기"
         },
         {
+          "page": "2-exhibition",
+          "slideId": 306,
+          "title": "G-STAR 2026 전시",
+          "rows": [
+            {
+              "heading": "전시 일정",
+              "body": "2026.11.19 ~ 2026.11.22"
+            },
+            {
+              "heading": "전시 장소",
+              "body": "부산 BEXCO"
+            },
+            {
+              "heading": "전시 작품",
+              "body": "월하일검"
+            }
+          ],
+          "images": [
+            {
+              "src": "assets/ppt/moonlight-gstar-2026-1.webp",
+              "width": 1440,
+              "height": 1080,
+              "aspect": 1.3333333333333333,
+              "label": "월하일검 전시 부스",
+              "alt": "월하일검 전시 배너와 게임을 실행한 두 대의 시연 모니터"
+            },
+            {
+              "src": "assets/ppt/moonlight-gstar-2026-2.webp",
+              "width": 700,
+              "height": 525,
+              "aspect": 1.3333333333333333,
+              "label": "월하일검 타이틀 화면",
+              "alt": "부스 모니터에 월하일검 타이틀 화면이 표시된 모습"
+            },
+            {
+              "src": "assets/ppt/moonlight-gstar-2026-3.webp",
+              "width": 1440,
+              "height": 1080,
+              "aspect": 1.3333333333333333,
+              "label": "관람객 전투 시연",
+              "alt": "헤드폰을 착용한 관람객이 전투 장면을 플레이하는 모습"
+            }
+          ],
+          "links": [],
+          "flow": null,
+          "extra": []
+        },
+        {
           "page": 3,
           "slideId": 259,
           "title": "월하일검 · 담당 구현 범위",
@@ -753,13 +801,13 @@ window.portfolioData = {
           ],
           "images": [
             {
-              "src": "assets/ppt/higashi-cutscene.webp",
-              "width": 800,
-              "height": 600,
+              "src": "assets/ppt/higashi-cutscene.webp?v=20261119-lipmotion-final",
+              "width": 768,
+              "height": 576,
               "aspect": 1.333333,
               "label": "발도와 대사 · 컷신 전경",
               "alt": "히가시 등장 컷신 · 발도와 대사",
-              "video": "assets/ppt/higashi-cutscene.mp4"
+              "video": "assets/ppt/higashi-cutscene.mp4?v=20261119-lipmotion-final"
             },
             {
               "src": "assets/ppt/higashi-face.webp",
@@ -1149,7 +1197,7 @@ window.portfolioData = {
   ],
   "source": {
     "file": "전진오_포트폴리오.pptx",
-    "sha256": "0eb291724e752b8b637d925df2f006159623e35108bbbbb6b9907b9d41e89815",
-    "slideCount": 25
+    "sha256": "a7658aba2e0b7a6832d24dda5ec456bbd50ce4a8e34ab4c52dc1fa8767f00fb4",
+    "slideCount": 26
   }
 };
