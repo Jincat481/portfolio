@@ -256,6 +256,42 @@ window.portfolioData = {
           "extra": []
         },
         {
+          "page": "5-falling-test",
+          "slideId": 303,
+          "title": "낙하 처형의 착지와 타격 타이밍 검증",
+          "rows": [
+            {
+              "heading": "재현한 문제",
+              "body": "착지 전에 마무리 동작이 시작돼\n도약과 타격 타이밍이 어긋남"
+            },
+            {
+              "heading": "게임 안에서 확인한 동작",
+              "body": "태우에 배치된 적을 향해 도약\n착지 후 피해 1회, 보행 복귀"
+            },
+            {
+              "heading": "자동화 검증",
+              "body": "태우 맵 시나리오 7/7 통과\n처형 회귀 109/109 통과\n경고 포함 성공 9건"
+            }
+          ],
+          "images": [
+            {
+              "src": "assets/ppt/falling-execution-test.webp",
+              "width": 1280,
+              "height": 720,
+              "aspect": 1.777778,
+              "label": "태우 튜토리얼 · 실제 배치 몹 처형",
+              "alt": "태우 실제 배치 몹 · 낙하 처형",
+              "video": "assets/ppt/falling-execution-test.mp4"
+            }
+          ],
+          "links": [],
+          "flow": {
+            "alt": "발판 끝까지 접근 → 곡선 도약 → 착지 공간 확인 → 피해 1회 적용\n보행 복귀",
+            "large": false
+          },
+          "extra": []
+        },
+        {
           "page": 6,
           "slideId": 267,
           "title": "사다리 이동의 정지 경계 선택",
@@ -663,6 +699,51 @@ window.portfolioData = {
           "extra": [
             "UE 5.7 · D3D12 PIE · 1920×1080\nLv_Taewoo · 고정 시점 · 40초 워밍업\n15초 × 5구간: OFF 3 / ON 2\nGPU 렌더링 켬 · 화면 출력 생략"
           ]
+        },
+        {
+          "page": "13-lip-sync",
+          "slideId": 304,
+          "title": "히가시의 목소리에 맞춘 컷신 립싱크",
+          "rows": [
+            {
+              "heading": "음성을 얼굴에 연결",
+              "body": "메타휴먼 애니메이터로 대사 분석\n기존 얼굴 모프 18개에 대응"
+            },
+            {
+              "heading": "대사 사이 입 모양 보정",
+              "body": "음성이 멎어도 턱이 열린 구간을\n찾아 닫힌 입으로 부드럽게 전환"
+            },
+            {
+              "heading": "실제 컷신 재생",
+              "body": "얼굴이 멈춘 메시의 틱을 복구\n태우 등장 트리거에서 재생 확인"
+            }
+          ],
+          "images": [
+            {
+              "src": "assets/ppt/higashi-cutscene.webp",
+              "width": 800,
+              "height": 600,
+              "aspect": 1.333333,
+              "label": "발도와 대사 · 컷신 전경",
+              "alt": "히가시 등장 컷신 · 발도와 대사",
+              "video": "assets/ppt/higashi-cutscene.mp4"
+            },
+            {
+              "src": "assets/ppt/higashi-face.webp",
+              "width": 768,
+              "height": 576,
+              "aspect": 1.333333,
+              "label": "발음과 입 닫힘 · 얼굴 근접",
+              "alt": "히가시 마지막 대사 · 얼굴 근접",
+              "video": "assets/ppt/higashi-face.mp4"
+            }
+          ],
+          "links": [],
+          "flow": {
+            "alt": "원본 대사 분석 → 얼굴 모프 연결 → 무음 구간 보정 → 컷신 재생 확인",
+            "large": false
+          },
+          "extra": []
         }
       ]
     },
@@ -827,7 +908,7 @@ window.portfolioData = {
             },
             {
               "heading": "확인한 결과",
-              "body": "UE4·Manny 117프레임 검증\nFBX와 라이브 경로의 출력 포즈 비교"
+              "body": "UE4·Manny 117프레임 검증\nFBX와 라이브 경로의 출력 포즈 비교\nPython 자동화 테스트 12건 통과"
             }
           ],
           "images": [
@@ -1034,8 +1115,8 @@ window.portfolioData = {
     }
   ],
   "source": {
-    "file": "전진오_포트폴리오_좌설명_우자료_레이아웃.pptx",
-    "sha256": "94004fb70efbd0c9f67d57e0bf26c82972f9192f7d3170142be2d21930436ba3",
-    "slideCount": 21
+    "file": "전진오_포트폴리오.pptx",
+    "sha256": "40c9f1045ec7078d7b6241a0b5175219ac0585be5c9ecf8de3c481ff2282f1cb",
+    "slideCount": 24
   }
 };
