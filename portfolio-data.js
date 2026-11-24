@@ -44,7 +44,7 @@ window.portfolioData = {
           ],
           "flow": null,
           "extra": [
-            "G-STAR 2026 전시 (예정)"
+            "G-STAR 2026 전시"
           ]
         },
         {
@@ -1152,7 +1152,7 @@ window.portfolioData = {
   ],
   "source": {
     "file": "전진오_포트폴리오.pptx",
-    "sha256": "a7362829165f8abfaa9d1f81da3ef73e3bbe1996ad671255f51f4e827c15e865",
+    "sha256": "c1b062bdecb0e507e529d9467a7b181f3300df887c224b28a1ca57c224148a27",
     "slideCount": 25
   }
 };
