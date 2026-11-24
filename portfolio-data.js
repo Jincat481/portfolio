@@ -256,6 +256,42 @@ window.portfolioData = {
           "extra": []
         },
         {
+          "page": "ragdoll-transition",
+          "slideId": 305,
+          "title": "처형 후 래그돌 전환 시 관절 움직임 보정",
+          "rows": [
+            {
+              "heading": "전환 순간의 문제",
+              "body": "처형 자세에서 물리로 넘어갈 때\n지면 근처의 관절이 크게 움직임"
+            },
+            {
+              "heading": "지면 접촉에 따라 감쇠 조절",
+              "body": "바닥과의 간격·접근 속도로\n접촉 직전의 움직임을 감쇠"
+            },
+            {
+              "heading": "태우 내리막 측정 결과",
+              "body": "1.030 → 0.323 cm/프레임\n최대 관절 이동 68.6% 감소\n자연 정지 5.10 → 8.17초"
+            }
+          ],
+          "images": [
+            {
+              "src": "assets/ppt/ragdoll-transition-downhill.webp",
+              "width": 1752,
+              "height": 634,
+              "aspect": 2.763407,
+              "label": "태우 내리막 · 일반 정면 2번 처형",
+              "alt": "태우 내리막 · 일반 정면 2번 처형 · 좌측 보정 전 / 우측 보정 후",
+              "video": "assets/ppt/ragdoll-transition-downhill.mp4"
+            }
+          ],
+          "links": [],
+          "flow": {
+            "alt": "처형 자세 인계 → 바닥과의 거리·\n접근 속도 확인 → 접촉 직전\n감쇠 강화 → 자연 정지 후\n설정 복원",
+            "large": false
+          },
+          "extra": []
+        },
+        {
           "page": "5-falling-test",
           "slideId": 303,
           "title": "낙하 처형의 착지와 타격 타이밍 검증",
@@ -1116,7 +1152,7 @@ window.portfolioData = {
   ],
   "source": {
     "file": "전진오_포트폴리오.pptx",
-    "sha256": "40c9f1045ec7078d7b6241a0b5175219ac0585be5c9ecf8de3c481ff2282f1cb",
-    "slideCount": 24
+    "sha256": "a7362829165f8abfaa9d1f81da3ef73e3bbe1996ad671255f51f4e827c15e865",
+    "slideCount": 25
   }
 };
