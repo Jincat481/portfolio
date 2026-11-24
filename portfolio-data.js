@@ -12,7 +12,7 @@ window.portfolioData = {
           "rows": [
             {
               "heading": "개발 기간",
-              "body": "2026.02 ~ 진행 중"
+              "body": "2026.02 ~ 2026.11"
             },
             {
               "heading": "개발 인원",
@@ -1152,7 +1152,7 @@ window.portfolioData = {
   ],
   "source": {
     "file": "전진오_포트폴리오.pptx",
-    "sha256": "c1b062bdecb0e507e529d9467a7b181f3300df887c224b28a1ca57c224148a27",
+    "sha256": "e7f5dfb7a7b4e456f1f41a45b28fccec6a3705fb257dcdec215c207c2dd503b8",
     "slideCount": 25
   }
 };
